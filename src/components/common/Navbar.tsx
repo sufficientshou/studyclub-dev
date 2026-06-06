@@ -53,17 +53,17 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#0A001F]/95 backdrop-blur-md shadow-lg border-t border-white/10 flex flex-col py-6 px-8 gap-6 animate-in slide-in-from-top-2 fade-in duration-200">
-          <Link href="/" className="text-white hover:text-cyan-400 transition-colors text-lg font-medium" onClick={() => setIsOpen(false)}>
+        <div className="md:hidden absolute top-full left-4 right-4 mt-2 bg-[#1A1832]/80 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/10 flex flex-col p-3 gap-1 animate-in slide-in-from-top-4 fade-in duration-300">
+          <Link href="/" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
             Home
           </Link>
-          <Link href="#about" className="text-white hover:text-cyan-400 transition-colors text-lg font-medium" onClick={() => setIsOpen(false)}>
+          <Link href="#about" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
             About Us
           </Link>
-          <Link href="#timeline" className="text-white hover:text-cyan-400 transition-colors text-lg font-medium" onClick={() => setIsOpen(false)}>
+          <Link href="#timeline" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
             Timeline
           </Link>
-          <Link href="#class" className="text-white hover:text-cyan-400 transition-colors text-lg font-medium" onClick={() => setIsOpen(false)}>
+          <Link href="#class" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
             Class
           </Link>
         </div>

@@ -9,7 +9,7 @@ export default function Home() {
           src="/studyclub/images/bg%20hero.png"
           alt="Hero Background"
           fill
-          className="w-full h-full object-fill"
+          className="w-full h-full object-cover object-center"
           priority
           quality={100}
         />

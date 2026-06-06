@@ -18,7 +18,9 @@ export default function About() {
         
         <div className="flex items-center justify-center mb-20">
           <Link
-            href="/about"
+            href="https://www.instagram.com/studyclub_id?igsh=MW1pZnM2amR5MHF1aA=="
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-3 px-6 py-2.5 bg-gradient-to-r from-[#A259FF] to-[#EB4688] text-white font-medium rounded-full hover:scale-105 transition-transform duration-300"
           >
             <span>See More</span>
