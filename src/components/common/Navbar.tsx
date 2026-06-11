@@ -1,14 +1,65 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    const updateNavbar = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+
+      const scrollDiff = Math.abs(currentScrollY - lastScrollY);
+
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      } else if (scrollDiff > 8) {
+        if (currentScrollY > lastScrollY) {
+          setIsVisible(false);
+          setIsOpen(false);
+        } else {
+          setIsVisible(true);
+        }
+      }
+
+      lastScrollY = currentScrollY;
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateNavbar);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 py-6 px-6 lg:px-24">
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-[transform,background-color,padding,border-color,box-shadow] duration-300 ease-out ${
+        isVisible ? 'translate-y-0' : '-translate-y-full'
+      } ${
+        isScrolled
+          ? 'bg-[#0A001F]/90 backdrop-blur-md shadow-lg border-b border-white/5 py-4'
+          : 'bg-transparent py-6'
+      } px-6 lg:px-24`}
+    >
       <div className="w-full flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative w-10 h-10 flex items-center justify-center">
@@ -40,15 +91,15 @@ export default function Navbar() {
           <Link href="/" className="text-white hover:text-gray-300 transition-colors text-xl font-medium">
             Home
           </Link>
-          <Link href="#about" className="text-white hover:text-gray-300 transition-colors text-xl font-medium">
+          <a href="#about" className="text-white hover:text-gray-300 transition-colors text-xl font-medium">
             About Us
-          </Link>
-          <Link href="#timeline" className="text-white hover:text-gray-300 transition-colors text-xl font-medium">
+          </a>
+          <a href="#journey" className="text-white hover:text-gray-300 transition-colors text-xl font-medium">
             Timeline
-          </Link>
-          <Link href="#class" className="text-white hover:text-gray-300 transition-colors text-xl font-medium">
+          </a>
+          <a href="#class" className="text-white hover:text-gray-300 transition-colors text-xl font-medium">
             Class
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -57,15 +108,15 @@ export default function Navbar() {
           <Link href="/" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
             Home
           </Link>
-          <Link href="#about" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
+          <a href="#about" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
             About Us
-          </Link>
-          <Link href="#timeline" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
+          </a>
+          <a href="#journey" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
             Timeline
-          </Link>
-          <Link href="#class" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
+          </a>
+          <a href="#class" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
             Class
-          </Link>
+          </a>
         </div>
       )}
     </nav>

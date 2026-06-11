@@ -45,12 +45,12 @@ export default function Home() {
             </div>
           </Link>
           <div className="w-full sm:w-auto rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300">
-            <Link
+            <a
               href="#about"
               className="flex items-center justify-center px-8 py-3 bg-[#0A001F] rounded-full text-white font-medium h-full w-full"
             >
               Learn more
-            </Link>
+            </a>
           </div>
         </div>
       </main>

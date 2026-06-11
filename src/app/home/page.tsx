@@ -1,6 +1,7 @@
 import Home from '@/components/home/Home';
 import About from '@/components/home/About';
 import Learning from '@/components/home/Learning';
+import Journey from '@/components/home/Journey';
 import Mentor from '@/components/home/Mentor';
 
 export default function HomePage() {
@@ -10,6 +11,7 @@ export default function HomePage() {
       <About />
       <Learning />
       <Mentor />
+       <Journey />
     </main>
   );
 }
