@@ -3,6 +3,7 @@ import About from '@/components/home/About';
 import Learning from '@/components/home/Learning';
 import Journey from '@/components/home/Journey';
 import Mentor from '@/components/home/Mentor';
+import Daftar from '@/components/home/Daftar';
 
 export default function HomePage() {
   return (
@@ -11,7 +12,9 @@ export default function HomePage() {
       <About />
       <Learning />
       <Mentor />
-       <Journey />
+      <Journey />
+      <Daftar />
     </main>
   );
 }
+

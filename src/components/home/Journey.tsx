@@ -51,12 +51,18 @@ export default function Journey() {
                       linear-gradient(135deg, #705DF2 0%, #EB498D 100%) border-box;
           border: 1.5px solid transparent;
           border-radius: 12px;
-          padding: 22px 26px;
+          padding: 16px 20px;
           width: 100%;
-          max-width: 380px;
+          max-width: 100%;
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
           font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        @media (min-width: 768px) {
+          .journey-card {
+            padding: 22px 26px;
+            max-width: 380px;
+          }
         }
         .journey-card:hover {
           transform: translateY(-2px);
@@ -79,16 +85,23 @@ export default function Journey() {
         }
         .timeline-line {
           position: absolute;
-          left: 18px;
-          top: 56px;
-          bottom: 44px;
+          left: calc(1rem + 18px);
+          top: 36px;
+          bottom: 36px;
           width: 2px;
           background: linear-gradient(to bottom, #705DF2 0%, #705DF2 30%, #C846A3 60%, #E23D80 85%, #EB498D 100%);
           transform: translateX(-50%);
         }
+        @media (min-width: 640px) {
+          .timeline-line {
+            left: calc(1.5rem + 18px);
+          }
+        }
         @media (min-width: 768px) {
           .timeline-line {
             left: 50%;
+            top: 56px;
+            bottom: 44px;
             transform: translateX(-50%);
           }
         }
@@ -96,21 +109,21 @@ export default function Journey() {
 
       <section
         id="journey"
-        className="relative w-full bg-[#0A001F] py-24 flex flex-col items-center overflow-hidden"
+        className="relative w-full bg-[#0A001F] py-16 md:py-24 flex flex-col items-center overflow-hidden"
       >
-        <div className="text-center mb-20 z-10 px-4">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wide leading-tight">
+        <div className="text-center mb-12 md:mb-20 z-10 px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wide leading-tight">
             Your Journey
           </h2>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#815DF2] to-[#F56F7E]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#815DF2] to-[#F56F7E]">
             Starts Here
           </h2>
         </div>
 
-        <div className="relative w-full max-w-4xl mx-auto px-6 z-10">
+        <div className="relative w-full max-w-4xl mx-auto px-4 sm:px-6 z-10">
           <div className="timeline-line" />
 
-          <div className="flex flex-col gap-12 md:gap-16 relative">
+          <div className="flex flex-col gap-8 md:gap-16 relative">
             {steps.map((step) => (
               <div
                 key={step.id}
@@ -119,10 +132,10 @@ export default function Journey() {
                 <div className="hidden md:flex justify-end w-full">
                   {step.side === 'left' && (
                     <div className="journey-card text-left">
-                      <h3 className="text-white font-medium text-[19px] md:text-[22px] leading-snug">
+                      <h3 className="text-white font-medium text-[16px] sm:text-[18px] md:text-[22px] leading-snug">
                         {step.title}
                       </h3>
-                      <p className="text-gray-400 text-[14px] md:text-[16px] font-normal mt-3">
+                      <p className="text-gray-400 text-[13px] sm:text-[14px] md:text-[16px] font-normal mt-2 md:mt-3">
                         {step.date}
                       </p>
                     </div>
@@ -154,10 +167,10 @@ export default function Journey() {
 
                   <div className="block md:hidden w-full">
                     <div className="journey-card text-left">
-                      <h3 className="text-white font-medium text-[19px] md:text-[22px] leading-snug">
+                      <h3 className="text-white font-medium text-[16px] sm:text-[18px] md:text-[22px] leading-snug">
                         {step.title}
                       </h3>
-                      <p className="text-gray-400 text-[14px] md:text-[16px] font-normal mt-3">
+                      <p className="text-gray-400 text-[13px] sm:text-[14px] md:text-[16px] font-normal mt-2 md:mt-3">
                         {step.date}
                       </p>
                     </div>
