@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Daftar() {
   return (
-    <section id="daftar" className="relative w-full bg-[#0A001F] py-16 md:py-20 lg:py-28 flex flex-col items-center overflow-hidden">
+    <section id="daftar" className="relative w-full bg-[#110729] py-16 md:py-20 lg:py-28 flex flex-col items-center overflow-hidden">
       <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 z-10">
         <div className="relative w-full max-w-5xl mx-auto rounded-[24px] md:rounded-[32px] overflow-hidden bg-[#0F0833] bg-no-repeat bg-gradient-to-b md:bg-gradient-to-r from-[#D64BB7] via-[#5F5CEC] to-[#0F0833] p-6 sm:p-8 md:py-12 md:px-12 lg:py-14 lg:px-16 flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16 border border-white/10 shadow-2xl">
           <div className="w-full md:w-[40%] flex justify-center shrink-0">

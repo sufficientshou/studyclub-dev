@@ -56,7 +56,7 @@ export default function Navbar() {
         isVisible ? 'translate-y-0' : '-translate-y-full'
       } ${
         isScrolled
-          ? 'bg-[#0A001F]/90 backdrop-blur-md shadow-lg border-b border-white/5 py-4'
+          ? 'bg-[#110729]/90 backdrop-blur-md shadow-lg border-b border-white/5 py-4'
           : 'bg-transparent py-6'
       } px-6 lg:px-24`}
     >

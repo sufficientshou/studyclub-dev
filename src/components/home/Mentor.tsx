@@ -18,7 +18,7 @@ export default function Mentor() {
   ];
 
   return (
-    <section id="mentor" className="relative w-full bg-[#0A001F] py-24 flex flex-col items-center overflow-hidden">
+    <section id="mentor" className="relative w-full bg-[#110729] py-24 flex flex-col items-center overflow-hidden">
       <div className="max-w-7xl w-full mx-auto px-6 flex flex-col items-center z-10">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center text-white tracking-wide">
           Guided By
@@ -46,14 +46,14 @@ export default function Mentor() {
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
               
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A001F]/90 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#110729]/90 via-transparent to-transparent"></div>
 
               <div className="relative z-10 m-4 p-5 rounded-2xl bg-[#1A1832]/60 backdrop-blur-md border border-white/10 flex items-center justify-between transition-colors duration-300 group-hover:bg-[#1A1832]/80">
                 <div className="flex flex-col">
                   <span className="text-white font-semibold text-lg">{mentor.name}</span>
                   <span className="text-gray-300 text-sm">{mentor.role}</span>
                 </div>
-                <div className="w-8 h-8 rounded-full border border-white flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#0A001F] transition-colors duration-300">
+                <div className="w-8 h-8 rounded-full border border-white flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#110729] transition-colors duration-300">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 

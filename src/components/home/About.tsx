@@ -3,8 +3,38 @@ import Link from 'next/link';
 
 export default function About() {
   return (
-    <section id="about" className="relative w-full bg-[#0A001F] py-24 flex flex-col items-center overflow-hidden">
-      <div className="max-w-7xl w-full mx-auto px-6 flex flex-col items-center z-10">
+    <section id="about" className="relative w-full bg-[#110729] py-24 flex flex-col items-center overflow-hidden">
+      
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Image
+          src="/studyclub/images/bg%20bintang.png"
+          alt="Stars Background"
+          fill
+          className="object-cover object-center opacity-80"
+        />
+      </div>
+
+      <div className="absolute left-8 lg:left-40 top-24 lg:top-28 z-0">
+        <Image 
+          src="/studyclub/images/asteroid.png" 
+          alt="Asteroid" 
+          width={150}
+          height={150}
+          className="w-16 lg:w-[120px] h-auto object-contain drop-shadow-2xl opacity-90" 
+        />
+      </div>
+
+      <div className="absolute -right-4 lg:-right-8 bottom-0 lg:-bottom-4 z-0 pointer-events-none">
+        <Image 
+          src="/studyclub/images/galaksi.png" 
+          alt="Galaxy" 
+          width={800}
+          height={800}
+          className="w-[350px] lg:w-[700px] h-auto object-contain opacity-90" 
+        />
+      </div>
+
+      <div className="max-w-7xl w-full mx-auto px-6 flex flex-col items-center z-10 relative">
         
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-center text-white tracking-wide">
           A Space to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A259FF] to-[#FF8A8A]">Learn</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A259FF] to-[#FF8A8A]">Grow</span>

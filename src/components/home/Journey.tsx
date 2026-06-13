@@ -109,7 +109,7 @@ export default function Journey() {
 
       <section
         id="journey"
-        className="relative w-full bg-[#0A001F] py-16 md:py-24 flex flex-col items-center overflow-hidden"
+        className="relative w-full bg-[#110729] py-16 md:py-24 flex flex-col items-center overflow-hidden"
       >
         <div className="text-center mb-12 md:mb-20 z-10 px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wide leading-tight">
