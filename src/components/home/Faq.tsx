@@ -1,0 +1,141 @@
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+
+const faqData = [
+  {
+    question: "Apa itu study club?",
+    answer: "Study Club adalah program mentoring dan belajar bersama yang dirancang untuk membantu mahasiswa mengembangkan kemampuan di bidang teknologi informasi."
+  },
+  {
+    question: "Apa itu study club?",
+    answer: "Study Club adalah program mentoring dan belajar bersama yang dirancang untuk membantu mahasiswa mengembangkan kemampuan di bidang teknologi informasi."
+  },
+  {
+    question: "Ada materi apa saja di study club?",
+    answer: "Materi yang diberikan disesuaikan dengan kurikulum setiap bidang, mulai dari dasar-dasar UI/UX, Web Development, hingga Data Science."
+  },
+  {
+    question: "Ada materi apa saja di study club?",
+    answer: "Materi yang diberikan disesuaikan dengan kurikulum setiap bidang, mulai dari dasar-dasar UI/UX, Web Development, hingga Data Science."
+  },
+  {
+    question: "Apa benefit ikut study club?",
+    answer: "Kamu akan mendapatkan ilmu baru, relasi, pengalaman bekerja dalam tim, dan portofolio proyek yang berguna untuk karirmu di masa depan."
+  },
+  {
+    question: "Apa benefit ikut study club?",
+    answer: "Kamu akan mendapatkan ilmu baru, relasi, pengalaman bekerja dalam tim, dan portofolio proyek yang berguna untuk karirmu di masa depan."
+  }
+];
+
+export default function Faq() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleFaq = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <section id="faq" className="relative w-full bg-[#110729] py-20 lg:py-28 flex flex-col items-center overflow-hidden">
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Image
+          src="/studyclub/images/bg%20bintang.png"
+          alt="Stars Background"
+          fill
+          className="object-cover object-center opacity-80"
+        />
+      </div>
+
+      <div className="absolute left-[-50px] lg:left-0 top-1/3 z-0 pointer-events-none opacity-90">
+        <Image 
+          src="/studyclub/images/planet%20ungu.png" 
+          alt="Planet Kiri" 
+          width={300}
+          height={300}
+          className="w-[150px] md:w-[250px] lg:w-[300px] h-auto object-contain" 
+        />
+      </div>
+      <div className="absolute right-4 lg:right-20 top-20 z-0 pointer-events-none opacity-90">
+        <Image 
+          src="/studyclub/images/neptunus.png" 
+          alt="Planet Kanan" 
+          width={100}
+          height={100}
+          className="w-[60px] md:w-[80px] lg:w-[100px] h-auto object-contain" 
+        />
+      </div>
+
+      <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 z-10 flex flex-col items-center">
+        <div className="text-center mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold tracking-wide leading-[1.2] mb-2">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8E51FF] to-[#D84693]">Questions?</span> <span className="text-white">We've</span>
+            <br />
+            <span className="text-white">Got</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8E51FF] to-[#D84693]">Answers</span>
+          </h2>
+        </div>
+
+        <p className="text-white/80 text-sm md:text-base lg:text-lg text-center max-w-2xl mx-auto mb-8 font-light leading-relaxed">
+          Temukan jawaban dari pertanyaan yang paling sering <br className="hidden md:block" /> ditanyakan seputar Study Club.
+        </p>
+
+        <Link
+          href="/kontak"
+          className="flex items-center justify-center gap-2 px-6 py-2.5 mb-16 bg-gradient-to-r from-[#8E51FF] to-[#D84693] text-white font-medium rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#D84693]/20"
+        >
+          <span className="text-[15px] font-medium tracking-wide">Kontak Kami</span>
+          <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shrink-0">
+            <svg 
+              className="w-3.5 h-3.5 text-[#8E51FF]" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+              strokeWidth={3}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </div>
+        </Link>
+
+        <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-8 md:gap-y-5">
+          {faqData.map((faq, index) => (
+            <div 
+              key={index}
+              className="w-full"
+            >
+              <button 
+                onClick={() => toggleFaq(index)}
+                className="w-full bg-white hover:bg-gray-50 transition-colors duration-200 rounded-full px-6 py-4 flex justify-between items-center shadow-lg group"
+              >
+                <span className="text-[#1A1A1A] font-bold text-sm md:text-[15px] text-left pr-4">
+                  {faq.question}
+                </span>
+                <div className={`w-7 h-7 shrink-0 rounded-full bg-[#8E51FF] flex justify-center items-center transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
+                  <svg 
+                    className="w-4 h-4 text-white" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor" 
+                    strokeWidth={3}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </div>
+              </button>
+              
+              <div 
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}
+              >
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-[20px] p-5 text-white/90 text-sm md:text-[15px] leading-relaxed">
+                  {faq.answer}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+}

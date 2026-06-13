@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 
 const steps = [
   {
@@ -111,6 +112,41 @@ export default function Journey() {
         id="journey"
         className="relative w-full bg-[#110729] py-16 md:py-24 flex flex-col items-center overflow-hidden"
       >
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/studyclub/images/bg%20bintang.png"
+            alt="Stars Background"
+            fill
+            className="object-cover object-center opacity-80"
+          />
+        </div>
+        <div className="absolute left-[-20px] lg:left-10 top-[30%] lg:top-[35%] z-0 pointer-events-none">
+          <Image 
+            src="/studyclub/images/planet%20merah.png" 
+            alt="Planet Merah" 
+            width={200}
+            height={200}
+            className="w-[120px] md:w-[160px] lg:w-[200px] h-auto object-contain drop-shadow-2xl opacity-90" 
+          />
+        </div>
+        <div className="absolute right-[-20px] lg:right-10 top-10 lg:top-16 z-0 pointer-events-none">
+          <Image 
+            src="/studyclub/images/planet%20ungu.png" 
+            alt="Planet Ungu" 
+            width={180}
+            height={180}
+            className="w-[100px] md:w-[150px] lg:w-[180px] h-auto object-contain drop-shadow-2xl opacity-90" 
+          />
+        </div>
+        <div className="absolute right-4 lg:right-20 bottom-10 lg:bottom-20 z-0 pointer-events-none">
+          <Image 
+            src="/studyclub/images/meteor.png" 
+            alt="Meteor" 
+            width={250}
+            height={250}
+            className="w-[150px] md:w-[200px] lg:w-[250px] h-auto object-contain drop-shadow-2xl opacity-80" 
+          />
+        </div>
         <div className="text-center mb-12 md:mb-20 z-10 px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wide leading-tight">
             Your Journey

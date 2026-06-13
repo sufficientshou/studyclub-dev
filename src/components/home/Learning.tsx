@@ -9,10 +9,10 @@ export default function Learning() {
           src="/studyclub/images/bg%20learning.png"
           alt="Learning Background"
           fill
-          className="object-cover object-center w-full h-full"
+          className="object-cover object-bottom w-full h-full"
           quality={100}
         />
-        <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-[#110729] to-transparent"></div>
+        <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#110729] to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#110729] to-transparent"></div>
       </div>
 

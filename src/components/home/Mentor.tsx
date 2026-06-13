@@ -19,6 +19,14 @@ export default function Mentor() {
 
   return (
     <section id="mentor" className="relative w-full bg-[#110729] py-24 flex flex-col items-center overflow-hidden">
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Image
+          src="/studyclub/images/bg%20bintang.png"
+          alt="Stars Background"
+          fill
+          className="object-cover object-center opacity-80"
+        />
+      </div>
       <div className="max-w-7xl w-full mx-auto px-6 flex flex-col items-center z-10">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center text-white tracking-wide">
           Guided By

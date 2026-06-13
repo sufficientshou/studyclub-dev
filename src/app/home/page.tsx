@@ -4,6 +4,7 @@ import Learning from '@/components/home/Learning';
 import Journey from '@/components/home/Journey';
 import Mentor from '@/components/home/Mentor';
 import Daftar from '@/components/home/Daftar';
+import Faq from '@/components/home/Faq';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Mentor />
       <Journey />
       <Daftar />
+      <Faq />
     </main>
   );
 }
