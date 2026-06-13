@@ -6,10 +6,10 @@ export default function Home() {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#110729]">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/studyclub/images/hero sc.png"
+          src="/studyclub/images/bg%20hero.png"
           alt="Hero Background"
           fill
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-fill"
           priority
           quality={100}
         />
@@ -58,7 +58,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="flex-1 w-full relative flex justify-center lg:justify-end mb-16 lg:mb-0">
+        <div className="flex-1 w-full relative flex justify-center lg:justify-end mb-16 lg:mb-0 animate-orbit">
           <Image
             src="/studyclub/images/sc orbit.png"
             alt="Study Club App Mockup"

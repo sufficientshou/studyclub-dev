@@ -24,7 +24,7 @@ export default function About() {
         />
       </div>
 
-      <div className="absolute -right-4 lg:-right-8 bottom-0 lg:-bottom-4 z-0 pointer-events-none">
+      <div className="absolute right-0 lg:right-16 bottom-0 lg:-bottom-4 z-0 pointer-events-none">
         <Image 
           src="/studyclub/images/galaksi.png" 
           alt="Galaxy" 

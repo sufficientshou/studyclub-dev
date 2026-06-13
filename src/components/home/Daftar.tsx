@@ -14,7 +14,7 @@ export default function Daftar() {
       </div>
       <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 z-10">
         <div className="relative w-full max-w-5xl mx-auto rounded-[24px] md:rounded-[32px] overflow-hidden bg-no-repeat bg-gradient-to-b md:bg-gradient-to-r from-[rgba(214,75,183,0.55)] via-[rgba(95,92,236,0.55)] to-[rgba(15,8,51,0.55)] p-6 sm:p-8 md:py-12 md:px-12 lg:py-14 lg:px-16 flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16 shadow-2xl">
-          <div className="absolute top-[-50px] right-[-50px] md:top-[-80px] md:right-[-80px] z-0 pointer-events-none opacity-80">
+          <div className="absolute top-[-50px] right-[-50px] md:top-[-80px] md:right-[-80px] z-0 pointer-events-none opacity-80 animate-float-delayed">
             <Image
               src="/studyclub/images/neptunus.png"
               alt="Neptune Planet"
@@ -23,7 +23,7 @@ export default function Daftar() {
               className="w-[200px] sm:w-[250px] md:w-[350px] lg:w-[400px] h-auto object-contain"
             />
           </div>
-          <div className="absolute bottom-[-30px] left-[-30px] md:bottom-[-50px] md:left-[-50px] z-0 pointer-events-none opacity-80">
+          <div className="absolute bottom-[-30px] left-[-30px] md:bottom-[-50px] md:left-[-50px] z-0 pointer-events-none opacity-80 animate-float">
             <Image
               src="/studyclub/images/si%20gelap.png"
               alt="Dark Planet"
@@ -34,7 +34,7 @@ export default function Daftar() {
           </div>
 
           <div className="relative z-10 w-full md:w-[40%] flex justify-center shrink-0">
-            <div className="relative w-[180px] h-[180px] sm:w-[240px] sm:h-[240px] md:w-[320px] md:h-[320px] lg:w-[350px] lg:h-[350px] transition-transform duration-500 hover:scale-105">
+            <div className="relative w-[180px] h-[180px] sm:w-[240px] sm:h-[240px] md:w-[320px] md:h-[320px] lg:w-[350px] lg:h-[350px] transition-transform duration-500 hover:scale-105 animate-float-reverse">
               <Image
                 src="/studyclub/images/roket.png"
                 alt="Rocket Mascot"

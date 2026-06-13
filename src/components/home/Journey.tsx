@@ -120,7 +120,7 @@ export default function Journey() {
             className="object-cover object-center opacity-80"
           />
         </div>
-        <div className="absolute left-[-20px] lg:left-10 top-[30%] lg:top-[35%] z-0 pointer-events-none">
+        <div className="absolute left-[-20px] lg:left-10 top-[30%] lg:top-[35%] z-0 pointer-events-none animate-float-delayed">
           <Image 
             src="/studyclub/images/planet%20merah.png" 
             alt="Planet Merah" 
@@ -129,7 +129,7 @@ export default function Journey() {
             className="w-[120px] md:w-[160px] lg:w-[200px] h-auto object-contain drop-shadow-2xl opacity-90" 
           />
         </div>
-        <div className="absolute right-[-20px] lg:right-10 top-10 lg:top-16 z-0 pointer-events-none">
+        <div className="absolute right-[-20px] lg:right-10 top-10 lg:top-16 z-0 pointer-events-none animate-float">
           <Image 
             src="/studyclub/images/planet%20ungu.png" 
             alt="Planet Ungu" 
@@ -138,7 +138,7 @@ export default function Journey() {
             className="w-[100px] md:w-[150px] lg:w-[180px] h-auto object-contain drop-shadow-2xl opacity-90" 
           />
         </div>
-        <div className="absolute right-4 lg:right-20 bottom-10 lg:bottom-20 z-0 pointer-events-none">
+        <div className="absolute right-4 lg:right-20 bottom-10 lg:bottom-20 z-0 pointer-events-none animate-float-horizontal">
           <Image 
             src="/studyclub/images/meteor.png" 
             alt="Meteor" 
@@ -148,10 +148,10 @@ export default function Journey() {
           />
         </div>
         <div className="text-center mb-12 md:mb-20 z-10 px-4">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wide leading-tight">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-white tracking-wide">
             Your Journey
           </h2>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#815DF2] to-[#F56F7E]">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#815DF2] to-[#F56F7E] tracking-wide">
             Starts Here
           </h2>
         </div>

@@ -48,18 +48,18 @@ export default function Faq() {
         />
       </div>
 
-      <div className="absolute left-[-50px] lg:left-0 top-1/3 z-0 pointer-events-none opacity-90">
+      <div className="absolute left-[-50px] lg:left-0 top-1/3 z-0 pointer-events-none opacity-90 animate-float">
         <Image 
-          src="/studyclub/images/planet%20ungu.png" 
+          src="/studyclub/images/neptun.png" 
           alt="Planet Kiri" 
           width={300}
           height={300}
           className="w-[150px] md:w-[250px] lg:w-[300px] h-auto object-contain" 
         />
       </div>
-      <div className="absolute right-4 lg:right-20 top-20 z-0 pointer-events-none opacity-90">
+      <div className="absolute right-4 lg:right-20 top-20 z-0 pointer-events-none opacity-90 animate-float-delayed">
         <Image 
-          src="/studyclub/images/neptunus.png" 
+          src="/studyclub/images/uranus.png" 
           alt="Planet Kanan" 
           width={100}
           height={100}
