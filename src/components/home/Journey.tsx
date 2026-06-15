@@ -110,7 +110,7 @@ export default function Journey() {
 
       <section
         id="journey"
-        className="relative w-full bg-[#110729] py-16 md:py-24 flex flex-col items-center overflow-hidden"
+        className="relative w-full bg-[#020413] py-16 md:py-24 flex flex-col items-center overflow-hidden"
       >
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image

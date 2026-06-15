@@ -3,33 +3,33 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#110729]">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020413]">
       <div className="absolute inset-0 z-0">
         <Image
           src="/studyclub/images/bg%20hero.png"
           alt="Hero Background"
           fill
-          className="w-full h-full object-fill"
+          className="w-full h-full object-cover object-center"
           priority
           quality={100}
         />
-        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#110729] via-[#110729]/80 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#020413] via-[#020413]/80 to-transparent"></div>
       </div>
 
-      <main className="relative z-10 w-full px-6 lg:px-24 flex flex-col lg:flex-row items-center justify-between text-white mt-12 gap-8 lg:gap-12">
-        <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-          <h1 className="font-bold mb-6 sm:mb-8 tracking-tight drop-shadow-xl leading-[1.1]">
-            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-[3rem] xl:text-[3.5rem] lg:whitespace-nowrap mb-1 lg:mb-2">
+      <main className="relative z-10 w-full px-6 lg:px-24 flex flex-col lg:flex-row items-center justify-between text-white pt-24 pb-12 lg:py-0 mt-4 lg:mt-12 gap-8 lg:gap-12">
+        <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left mt-8 lg:mt-0">
+          <h1 className="font-bold mb-4 sm:mb-8 tracking-tight drop-shadow-xl leading-[1.1]">
+            <span className="block text-[28px] sm:text-4xl md:text-5xl lg:text-[3rem] xl:text-[3.5rem] lg:whitespace-nowrap mb-1 lg:mb-2">
               Grow Together Through
             </span>
-            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] text-transparent bg-clip-text bg-gradient-to-r from-[#FF8A8A] to-[#A259FF]">
+            <span className="block text-[44px] sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] text-transparent bg-clip-text bg-gradient-to-r from-[#FF8A8A] to-[#A259FF]">
               Study Club
             </span>
           </h1>
-          <p className="text-xl sm:text-2xl md:text-3xl lg:text-[28px] mb-8 sm:mb-12 text-gray-100 drop-shadow max-w-3xl mx-auto lg:mx-0 font-light leading-relaxed px-2 lg:px-0">
+          <p className="text-lg sm:text-2xl md:text-3xl lg:text-[28px] mb-8 sm:mb-12 text-gray-100 drop-shadow max-w-3xl mx-auto lg:mx-0 font-light leading-relaxed px-2 lg:px-0">
             &quot;Upgrade Your Skills, Unlock Your Potential&quot;
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start items-center mb-16 sm:mb-24 lg:mb-0 w-full sm:w-auto px-4 sm:px-0">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start items-center mb-8 sm:mb-24 lg:mb-0 w-full sm:w-auto px-4 sm:px-0">
             <Link
               href="/pendaftaran"
               className="w-full sm:w-auto flex items-center justify-center gap-3 px-1.5 py-1.5 pl-6 bg-gradient-to-r from-[#B05BFF] to-[#EB4688] text-white font-medium rounded-full hover:scale-105 transition-transform duration-300"
@@ -50,7 +50,7 @@ export default function Home() {
             <div className="w-full sm:w-auto rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300">
               <a
                 href="#about"
-                className="flex items-center justify-center px-8 py-3 bg-[#110729] rounded-full text-white font-medium h-full w-full"
+                className="flex items-center justify-center px-8 py-3 bg-[#020413] rounded-full text-white font-medium h-full w-full"
               >
                 Learn more
               </a>
@@ -64,7 +64,7 @@ export default function Home() {
             alt="Study Club App Mockup"
             width={1000}
             height={1000}
-            className="w-full h-auto max-w-[550px] lg:max-w-[850px] xl:max-w-[1000px] object-contain drop-shadow-2xl lg:translate-x-8 xl:translate-x-16 hover:scale-[1.02] transition-transform duration-500"
+            className="w-[85%] sm:w-full h-auto max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[850px] xl:max-w-[1000px] object-contain drop-shadow-2xl lg:translate-x-8 xl:translate-x-16 hover:scale-[1.02] transition-transform duration-500"
             priority
           />
         </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function About() {
   return (
-    <section id="about" className="relative w-full bg-[#110729] py-24 flex flex-col items-center overflow-hidden">
+    <section id="about" className="relative w-full bg-[#020413] py-24 flex flex-col items-center overflow-hidden">
       
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
@@ -70,21 +70,30 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full px-4 mb-12">
           <div className="relative w-full max-w-[320px] aspect-[4/3] bg-gray-800 rounded-xl border-4 border-white shadow-xl transform -rotate-3 hover:rotate-0 transition-transform duration-300 overflow-hidden">
-             <div className="w-full h-full flex items-center justify-center text-gray-400">
-               Image 1
-             </div>
+            <Image 
+              src="/studyclub/images/img%20about.png" 
+              alt="Study Club About 1" 
+              fill
+              className="object-cover"
+            />
           </div>
           
           <div className="relative w-full max-w-[320px] aspect-[4/3] bg-gray-800 rounded-xl border-4 border-white shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-300 overflow-hidden z-10 md:-mt-8">
-             <div className="w-full h-full flex items-center justify-center text-gray-400">
-               Image 2
-             </div>
+            <Image 
+              src="/studyclub/images/img%20about.png" 
+              alt="Study Club About 2" 
+              fill
+              className="object-cover"
+            />
           </div>
           
           <div className="relative w-full max-w-[320px] aspect-[4/3] bg-gray-800 rounded-xl border-4 border-white shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-300 overflow-hidden">
-             <div className="w-full h-full flex items-center justify-center text-gray-400">
-               Image 3
-             </div>
+            <Image 
+              src="/studyclub/images/img%20about.png" 
+              alt="Study Club About 3" 
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
 

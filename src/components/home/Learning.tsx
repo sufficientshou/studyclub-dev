@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Learning() {
   return (
-    <section id="class" className="relative w-full bg-[#110729] overflow-hidden flex flex-col items-center justify-center min-h-screen py-24">
+    <section id="class" className="relative w-full bg-[#020413] overflow-hidden flex flex-col items-center justify-center min-h-screen py-24">
       <div className="absolute inset-0 z-0">
         <Image
           src="/studyclub/images/bg%20learning.png"
@@ -12,8 +12,8 @@ export default function Learning() {
           className="object-cover object-bottom w-full h-full"
           quality={100}
         />
-        <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#110729] to-transparent"></div>
-        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#110729] to-transparent"></div>
+        <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#020413] to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#020413] to-transparent"></div>
       </div>
 
       <div className="relative z-10 w-full flex flex-col items-center justify-center mt-8 lg:-mt-24">

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Daftar() {
   return (
-    <section id="daftar" className="relative w-full bg-[#110729] py-16 md:py-20 lg:py-28 flex flex-col items-center overflow-hidden">
+    <section id="daftar" className="relative w-full bg-[#020413] py-16 md:py-20 lg:py-28 flex flex-col items-center overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
           src="/studyclub/images/bg%20bintang.png"

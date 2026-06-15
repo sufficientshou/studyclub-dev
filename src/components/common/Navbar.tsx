@@ -56,7 +56,7 @@ export default function Navbar() {
         isVisible ? 'translate-y-0' : '-translate-y-full'
       } ${
         isScrolled
-          ? 'bg-[#110729]/90 backdrop-blur-md shadow-lg border-b border-white/5 py-4'
+          ? 'bg-[#020413]/90 backdrop-blur-md shadow-lg border-b border-white/5 py-4'
           : 'bg-transparent py-6'
       } px-6 lg:px-24`}
     >
@@ -104,7 +104,7 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden absolute top-full left-4 right-4 mt-2 bg-[#1A1832]/80 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/10 flex flex-col p-3 gap-1 animate-in slide-in-from-top-4 fade-in duration-300">
+        <div className="md:hidden absolute top-full left-4 right-4 mt-2 bg-[#020413]/90 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/10 flex flex-col p-3 gap-1 animate-in slide-in-from-top-4 fade-in duration-300">
           <Link href="/" className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide" onClick={() => setIsOpen(false)}>
             Home
           </Link>

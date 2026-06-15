@@ -38,7 +38,7 @@ export default function Faq() {
   };
 
   return (
-    <section id="faq" className="relative w-full bg-[#110729] py-20 lg:py-28 flex flex-col items-center overflow-hidden">
+    <section id="faq" className="relative w-full bg-[#020413] py-20 lg:py-28 flex flex-col items-center overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
           src="/studyclub/images/bg%20bintang.png"
@@ -106,14 +106,14 @@ export default function Faq() {
             >
               <button 
                 onClick={() => toggleFaq(index)}
-                className="w-full bg-white hover:bg-gray-50 transition-colors duration-200 rounded-full px-6 py-4 flex justify-between items-center shadow-lg group"
+                className="w-full bg-white hover:bg-gray-50 transition-colors duration-200 rounded-[32px] px-8 py-5 md:py-6 flex justify-between items-center shadow-lg group"
               >
-                <span className="text-[#1A1A1A] font-bold text-sm md:text-[15px] text-left pr-4">
+                <span className="text-[#1A1A1A] font-bold text-base md:text-lg text-left pr-4">
                   {faq.question}
                 </span>
-                <div className={`w-7 h-7 shrink-0 rounded-full bg-[#8E51FF] flex justify-center items-center transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
+                <div className={`w-10 h-10 shrink-0 rounded-full bg-[#020413] flex justify-center items-center transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
                   <svg 
-                    className="w-4 h-4 text-white" 
+                    className="w-5 h-5 text-white" 
                     fill="none" 
                     viewBox="0 0 24 24" 
                     stroke="currentColor" 
