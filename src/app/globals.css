@@ -141,3 +141,129 @@ body {
 .animate-orbit {
   animation: orbit 8s ease-in-out infinite;
 }
+
+/* Card Flip styles */
+.about-card {
+  perspective: 1000px;
+  position: relative;
+}
+
+.about-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-card:hover .about-card-inner {
+  transform: rotateY(180deg);
+}
+
+.about-card-front,
+.about-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Front side */
+.about-card-front {
+  transform: rotateY(0deg);
+}
+
+/* Back side */
+.about-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glowing Rotating Border Animation */
+.about-card-back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 170%;
+  height: 170%;
+  background: linear-gradient(90deg, transparent, #A259FF, #EB4688, #FF8A8A, #A259FF, transparent);
+  animation: about-card-rotation 5000ms infinite linear;
+  z-index: 1;
+}
+
+.about-card-back-content {
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background-color: #07091e;
+  border-radius: 14px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  z-index: 2;
+  overflow: hidden;
+  padding: 24px;
+}
+
+@keyframes about-card-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Floating blur circles background inside card */
+.about-card-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(20px);
+  opacity: 0.5;
+  animation: about-card-floating 3000ms infinite ease-in-out;
+  z-index: 0;
+}
+
+.about-card-circle-purple {
+  background-color: #A259FF;
+  left: 30px;
+  top: 10px;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0ms;
+}
+
+.about-card-circle-pink {
+  background-color: #EB4688;
+  right: 20px;
+  bottom: 20px;
+  width: 80px;
+  height: 80px;
+  animation-delay: -1000ms;
+}
+
+.about-card-circle-cyan {
+  background-color: #00D2FF;
+  left: 10px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  animation-delay: -2000ms;
+}
+
+@keyframes about-card-floating {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(12px) scale(1.1);
+  }
+}

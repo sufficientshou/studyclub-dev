@@ -1,7 +1,27 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function About() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const images = [
+    "/studyclub/images/img%20about.png",
+    "/studyclub/images/hero%20sc.png",
+    "/studyclub/images/mentor%20web.png",
+    "/studyclub/images/bg%20learning.png"
+  ];
+
+  const handlePrev = () => {
+    setActiveIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
   return (
     <section id="about" className="relative w-full bg-[#020413] py-24 flex flex-col items-center overflow-hidden">
       
@@ -68,40 +88,130 @@ export default function About() {
           </Link>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full px-4 mb-12">
-          <div className="relative w-full max-w-[320px] aspect-[4/3] bg-gray-800 rounded-xl border-4 border-white shadow-xl transform -rotate-3 hover:rotate-0 transition-transform duration-300 overflow-hidden">
-            <Image 
-              src="/studyclub/images/img%20about.png" 
-              alt="Study Club About 1" 
-              fill
-              className="object-cover"
-            />
-          </div>
+        <div className="relative w-full max-w-6xl mx-auto flex flex-col items-center justify-center mb-12">
           
-          <div className="relative w-full max-w-[320px] aspect-[4/3] bg-gray-800 rounded-xl border-4 border-white shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-300 overflow-hidden z-10 md:-mt-8">
-            <Image 
-              src="/studyclub/images/img%20about.png" 
-              alt="Study Club About 2" 
-              fill
-              className="object-cover"
-            />
-          </div>
-          
-          <div className="relative w-full max-w-[320px] aspect-[4/3] bg-gray-800 rounded-xl border-4 border-white shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-300 overflow-hidden">
-            <Image 
-              src="/studyclub/images/img%20about.png" 
-              alt="Study Club About 3" 
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
+          <div className="relative w-full flex items-center justify-center">
 
-        <div className="flex items-center gap-2 mt-4">
-          <div className="w-2 h-2 rounded-full bg-[#EB4688]"></div>
-          <div className="w-2 h-2 rounded-full bg-[#3d236b]"></div>
-          <div className="w-2 h-2 rounded-full bg-[#3d236b]"></div>
-          <div className="w-2 h-2 rounded-full bg-[#3d236b]"></div>
+            <button 
+              onClick={handlePrev} 
+              className="absolute left-0 md:-left-4 lg:-left-12 z-20 p-2 text-white bg-white/10 hover:bg-[#A259FF] rounded-full backdrop-blur-md transition-all border border-white/20 hover:scale-110"
+              aria-label="Previous image"
+            >
+              <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full px-12 md:px-4">
+
+              <div className="about-card w-full max-w-[320px] aspect-[4/3] transform -rotate-3 hover:rotate-0 transition-transform duration-300 cursor-pointer">
+                <div className="about-card-inner rounded-xl shadow-xl">
+
+                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden border-4 border-white">
+                    <Image 
+                      src={images[(activeIndex + 0) % images.length]} 
+                      alt="Study Club About 1" 
+                      fill
+                      className="object-cover transition-all duration-500"
+                    />
+                  </div>
+                  
+
+                  <div className="about-card-back bg-[#151515] rounded-xl overflow-hidden border-4 border-white">
+                    <div className="about-card-circle about-card-circle-purple"></div>
+                    <div className="about-card-circle about-card-circle-pink"></div>
+                    <div className="about-card-circle about-card-circle-cyan"></div>
+                    <div className="about-card-back-content flex flex-col items-center justify-center">
+                      <div className="text-center">
+                        <p className="text-[10px] uppercase tracking-widest text-[#A259FF] font-semibold mb-1">Study Club 2025</p>
+                        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">UI/UX</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div className="about-card w-full max-w-[320px] aspect-[4/3] transform rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer z-10 md:-mt-8">
+                <div className="about-card-inner rounded-xl shadow-xl">
+
+                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden border-4 border-white">
+                    <Image 
+                      src={images[(activeIndex + 1) % images.length]} 
+                      alt="Study Club About 2" 
+                      fill
+                      className="object-cover transition-all duration-500"
+                    />
+                  </div>
+                  
+
+                  <div className="about-card-back bg-[#151515] rounded-xl overflow-hidden border-4 border-white">
+                    <div className="about-card-circle about-card-circle-purple"></div>
+                    <div className="about-card-circle about-card-circle-pink"></div>
+                    <div className="about-card-circle about-card-circle-cyan"></div>
+                    <div className="about-card-back-content flex flex-col items-center justify-center">
+                      <div className="text-center">
+                        <p className="text-[10px] uppercase tracking-widest text-[#EB4688] font-semibold mb-1">Study Club 2025</p>
+                        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">UI/UX</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div className="about-card w-full max-w-[320px] aspect-[4/3] transform -rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer">
+                <div className="about-card-inner rounded-xl shadow-xl">
+
+                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden border-4 border-white">
+                    <Image 
+                      src={images[(activeIndex + 2) % images.length]} 
+                      alt="Study Club About 3" 
+                      fill
+                      className="object-cover transition-all duration-500"
+                    />
+                  </div>
+                  
+
+                  <div className="about-card-back bg-[#151515] rounded-xl overflow-hidden border-4 border-white">
+                    <div className="about-card-circle about-card-circle-purple"></div>
+                    <div className="about-card-circle about-card-circle-pink"></div>
+                    <div className="about-card-circle about-card-circle-cyan"></div>
+                    <div className="about-card-back-content flex flex-col items-center justify-center">
+                      <div className="text-center">
+                        <p className="text-[10px] uppercase tracking-widest text-[#00D2FF] font-semibold mb-1">Study Club 2025</p>
+                        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">UI/UX</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <button 
+              onClick={handleNext} 
+              className="absolute right-0 md:-right-4 lg:-right-12 z-20 p-2 text-white bg-white/10 hover:bg-[#A259FF] rounded-full backdrop-blur-md transition-all border border-white/20 hover:scale-110"
+              aria-label="Next image"
+            >
+              <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          <div className="flex items-center gap-2 mt-8">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setActiveIndex(i)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  activeIndex === i ? 'bg-[#EB4688] w-6' : 'bg-[#3d236b] w-2 hover:bg-[#A259FF]'
+                }`}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
       </div>
