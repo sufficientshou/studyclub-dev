@@ -142,7 +142,6 @@ body {
   animation: orbit 8s ease-in-out infinite;
 }
 
-/* Card Flip styles */
 .about-card {
   perspective: 1000px;
   position: relative;
@@ -169,12 +168,10 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
-/* Front side */
 .about-card-front {
   transform: rotateY(0deg);
 }
 
-/* Back side */
 .about-card-back {
   transform: rotateY(180deg);
   display: flex;
@@ -182,7 +179,6 @@ body {
   align-items: center;
 }
 
-/* Glowing Rotating Border Animation */
 .about-card-back::before {
   position: absolute;
   content: ' ';
@@ -220,7 +216,6 @@ body {
   }
 }
 
-/* Floating blur circles background inside card */
 .about-card-circle {
   width: 90px;
   height: 90px;

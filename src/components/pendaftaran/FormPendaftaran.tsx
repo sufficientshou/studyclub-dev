@@ -120,23 +120,23 @@ export default function FormPendaftaran() {
         </div>
       </div>
 
-      <div className="absolute left-8 lg:left-32 top-32 lg:top-40 z-0 pointer-events-none">
+      <div className="absolute left-8 lg:left-32 top-32 lg:top-40 z-0 pointer-events-none animate-float-horizontal">
         <Image 
           src="/studyclub/images/asteroid.png" 
           alt="Asteroid" 
           width={150}
           height={150}
-          className="w-20 lg:w-[150px] h-auto object-contain drop-shadow-2xl opacity-90" 
+          className="w-20 lg:w-[150px] h-auto object-contain drop-shadow-2xl opacity-90 animate-spin-slow-reverse" 
         />
       </div>
 
-      <div className="absolute right-4 lg:right-20 top-16 lg:top-24 z-0 pointer-events-none">
+      <div className="absolute right-4 lg:right-20 top-16 lg:top-24 z-0 pointer-events-none animate-float-delayed">
         <Image 
           src="/studyclub/images/ungu merah.png" 
           alt="Planet Right" 
           width={120}
           height={120}
-          className="w-20 lg:w-[120px] h-auto object-contain drop-shadow-2xl opacity-90" 
+          className="w-20 lg:w-[120px] h-auto object-contain drop-shadow-2xl opacity-90 animate-spin-slow" 
         />
       </div>
 
@@ -151,8 +151,8 @@ export default function FormPendaftaran() {
       </div>
 
       <div className="max-w-4xl w-full mx-auto px-6 flex flex-col items-center z-10 relative">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6 text-center text-white tracking-wide whitespace-nowrap">
-          Begin Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A259FF] to-[#FF8A8A]">Registration</span>
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6 text-center text-white tracking-wide sm:whitespace-nowrap">
+          Begin Your <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-[#A259FF] to-[#FF8A8A]">Registration</span>
         </h2>
         <p className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-12 lg:mb-16 text-center text-white">
           67 Juni - 69 Juli 2026
@@ -190,13 +190,13 @@ export default function FormPendaftaran() {
           </div>
 
           <div className="relative w-full">
-            <div className="absolute -left-20 lg:-left-52 top-1/2 -translate-y-1/2 mt-4 lg:mt-6 z-0 pointer-events-none">
+            <div className="absolute -left-8 md:-left-20 lg:-left-52 top-1/2 -translate-y-1/2 mt-4 lg:mt-6 z-0 pointer-events-none animate-float">
               <Image 
                 src="/studyclub/images/planet merah.png" 
                 alt="Planet Merah" 
                 width={120}
                 height={120}
-                className="w-20 lg:w-[120px] h-auto object-contain drop-shadow-2xl opacity-90" 
+                className="w-20 lg:w-[120px] h-auto object-contain drop-shadow-2xl opacity-90 animate-spin-slow-reverse" 
               />
             </div>
             <div className="w-full relative z-10 bg-[#191A30]/40 border border-white/10 rounded-xl p-6 lg:p-8 shadow-xl backdrop-blur-md">
@@ -244,13 +244,13 @@ export default function FormPendaftaran() {
             </div>
           </div>
           <div className="relative w-full">
-            <div className="absolute -right-24 lg:-right-56 top-1/2 -translate-y-1/2 -mt-24 lg:-mt-60 z-0 pointer-events-none">
+            <div className="absolute -right-10 md:-right-24 lg:-right-56 top-1/2 -translate-y-1/2 -mt-24 lg:-mt-60 z-0 pointer-events-none animate-float-reverse">
               <Image 
                 src="/studyclub/images/planet ungu.png" 
                 alt="Planet Ungu" 
                 width={160}
                 height={160}
-                className="w-28 lg:w-[160px] h-auto object-contain drop-shadow-2xl opacity-90" 
+                className="w-28 lg:w-[160px] h-auto object-contain drop-shadow-2xl opacity-90 animate-spin-slow" 
               />
             </div>
             <div className="w-full relative z-10 bg-[#191A30]/40 border border-white/10 rounded-xl p-6 lg:p-8 shadow-xl backdrop-blur-md">
@@ -320,13 +320,13 @@ export default function FormPendaftaran() {
             </div>
           </div>
           <div className="relative w-full">
-            <div className="absolute -right-32 lg:-right-72 -bottom-16 lg:-bottom-20 z-0 pointer-events-none">
+            <div className="absolute -right-8 md:-right-32 lg:-right-72 -bottom-16 lg:-bottom-20 z-0 pointer-events-none animate-float-delayed">
               <Image 
                 src="/studyclub/images/uranus.png" 
                 alt="Planet Uranus" 
                 width={140}
                 height={140}
-                className="w-24 lg:w-[140px] h-auto object-contain drop-shadow-2xl opacity-90" 
+                className="w-24 lg:w-[140px] h-auto object-contain drop-shadow-2xl opacity-90 animate-spin-slow-reverse" 
               />
             </div>
             <div className="w-full relative z-10 bg-[#191A30]/40 border border-white/10 rounded-xl p-6 lg:p-8 shadow-xl backdrop-blur-md">

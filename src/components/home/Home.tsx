@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020413]">
+    <div id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020413]">
       <div className="absolute inset-0 z-0">
         <Image
           src="/studyclub/images/bg%20hero.png"
