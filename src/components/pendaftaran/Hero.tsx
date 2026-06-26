@@ -20,7 +20,7 @@ export default function Hero() {
       <main className="relative z-10 w-full px-6 lg:px-24 flex flex-col lg:flex-row items-center justify-between text-white pt-24 pb-12 lg:py-0 mt-4 lg:mt-12 gap-8 lg:gap-12">
         <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left mt-8 lg:mt-0">
           <h1 className="font-bold mb-4 sm:mb-8 tracking-tight drop-shadow-xl leading-[1.1]">
-            <span className="block text-[28px] sm:text-4xl md:text-5xl lg:text-[3rem] xl:text-[3.5rem] lg:whitespace-nowrap mb-1 lg:mb-2">
+            <span className="block text-[32px] sm:text-4xl md:text-5xl lg:text-[3rem] xl:text-[3.5rem] lg:whitespace-nowrap mb-1 lg:mb-2">
               Embark on Your
             </span>
             <span className="block text-[44px] sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5rem] lg:whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-[#FF8A8A] to-[#A259FF] leading-tight">
@@ -30,9 +30,7 @@ export default function Hero() {
           <p className="text-lg sm:text-2xl md:text-3xl lg:text-[28px] mb-4 sm:mb-6 text-gray-100 drop-shadow max-w-3xl mx-auto lg:mx-0 font-light leading-relaxed px-2 lg:px-0">
             &quot;Upgrade Your Skills, Unlock Your Potential&quot;
           </p>
-          <p className="text-base sm:text-lg md:text-xl lg:text-[22px] mb-8 sm:mb-12 text-gray-200 drop-shadow max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed px-2 lg:px-0">
-            Silakan isi data dengan benar dan lengkap. Pastikan nomor WhatsApp aktif untuk informasi selanjutnya.
-          </p>
+
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start items-center mb-8 sm:mb-24 lg:mb-0 w-full sm:w-auto px-4 sm:px-0">
             <button
               onClick={() => {
@@ -60,7 +58,7 @@ export default function Hero() {
         </div>
         
         <div className="flex-1 w-full flex justify-center lg:justify-end mb-16 lg:mb-0">
-          <div className="relative flex items-center justify-center w-[85%] sm:w-full aspect-square max-w-[400px] sm:max-w-[500px] md:max-w-[500px] lg:max-w-[550px] xl:max-w-[650px] translate-x-8 md:translate-x-16 lg:translate-x-16 xl:translate-x-20">
+          <div className="relative flex items-center justify-center w-[85%] sm:w-full aspect-square max-w-[400px] sm:max-w-[500px] md:max-w-[500px] lg:max-w-[550px] xl:max-w-[650px] translate-x-0 md:translate-x-16 lg:translate-x-16 xl:translate-x-20">
             <Image
               src="/studyclub/images/uranus.png"
               alt="Planet Uranus"

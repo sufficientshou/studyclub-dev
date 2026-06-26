@@ -13,7 +13,7 @@ export default function Home() {
           priority
           quality={100}
         />
-        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#020413] via-[#020413]/80 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#01031A] via-[#01031A]/80 to-transparent pointer-events-none"></div>
       </div>
 
       <main className="relative z-10 w-full px-6 lg:px-24 flex flex-col lg:flex-row items-center justify-between text-white pt-24 pb-12 lg:py-0 mt-4 lg:mt-12 gap-8 lg:gap-12">

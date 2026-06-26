@@ -23,7 +23,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="relative w-full bg-[#020413] py-24 flex flex-col items-center overflow-hidden">
+    <section id="about" className="relative w-full bg-[#01031A] py-24 flex flex-col items-center overflow-hidden">
       
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image

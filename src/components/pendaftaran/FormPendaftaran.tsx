@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const kelasOptions = [
   {
@@ -42,10 +43,11 @@ const kelasOptions = [
 ];
 
 export default function FormPendaftaran() {
-  const [angkatan, setAngkatan] = useState('2024');
-  const [kelas1, setKelas1] = useState('UI/UX');
-  const [kelas2, setKelas2] = useState('UI/UX');
-  const [bersedia, setBersedia] = useState('Ya');
+  const router = useRouter();
+  const [angkatan, setAngkatan] = useState('');
+  const [kelas1, setKelas1] = useState('');
+  const [kelas2, setKelas2] = useState('');
+  const [bersedia, setBersedia] = useState('');
 
   const [nama, setNama] = useState('');
   const [npm, setNpm] = useState('');
@@ -57,6 +59,14 @@ export default function FormPendaftaran() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!angkatan || !kelas1 || !kelas2 || !bersedia) {
+      setPopupType('error');
+      setPopupMessage('Harap pilih angkatan, kelas, dan kesediaan terlebih dahulu.');
+      setShowPopup(true);
+      return;
+    }
+
     setIsSubmitting(true);
 
     const URL_APP_SCRIPT = "https://script.google.com/macros/s/AKfycbwWbsie0pvxTyK2yA4UHf7lZyr58GNGpo5ssDfu6R64k4jIQhb5VvehvVm-pu5Jhna9ig/exec";
@@ -80,13 +90,7 @@ export default function FormPendaftaran() {
         },
         body: JSON.stringify(dataMahasiswa)
       });
-      
-      setPopupType('success');
-      setPopupMessage('Terima kasih sudah mendaftar');
-      setShowPopup(true);
-      setNama('');
-      setNpm('');
-      setAlasan('');
+      router.push('/terimakasih');
     } catch (error) {
       console.error("Error Koneksi:", error);
       setPopupType('error');
