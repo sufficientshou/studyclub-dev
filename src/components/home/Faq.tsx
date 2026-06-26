@@ -6,27 +6,27 @@ import { useState } from 'react';
 const faqData = [
   {
     question: "Apa itu study club?",
-    answer: "Study Club adalah program mentoring dan belajar bersama yang dirancang untuk membantu mahasiswa mengembangkan kemampuan di bidang teknologi informasi."
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     question: "Apa itu study club?",
-    answer: "Study Club adalah program mentoring dan belajar bersama yang dirancang untuk membantu mahasiswa mengembangkan kemampuan di bidang teknologi informasi."
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     question: "Ada materi apa saja di study club?",
-    answer: "Materi yang diberikan disesuaikan dengan kurikulum setiap bidang, mulai dari dasar-dasar UI/UX, Web Development, hingga Data Science."
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     question: "Ada materi apa saja di study club?",
-    answer: "Materi yang diberikan disesuaikan dengan kurikulum setiap bidang, mulai dari dasar-dasar UI/UX, Web Development, hingga Data Science."
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     question: "Apa benefit ikut study club?",
-    answer: "Kamu akan mendapatkan ilmu baru, relasi, pengalaman bekerja dalam tim, dan portofolio proyek yang berguna untuk karirmu di masa depan."
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     question: "Apa benefit ikut study club?",
-    answer: "Kamu akan mendapatkan ilmu baru, relasi, pengalaman bekerja dalam tim, dan portofolio proyek yang berguna untuk karirmu di masa depan."
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }
 ];
 

@@ -8,7 +8,7 @@ const tracksData = [
     id: "uiux",
     title: "UI/UX",
     shortDesc: "UI/UX Design berfokus pada pembuatan tampilan...",
-    image: "/studyclub/images/img%20about.png",
+    image: "/studyclub/images/puiux.png",
     paragraphs: [
       <p key="1">
         <span className="text-white font-bold text-xl mr-2">UI/UX</span> 
@@ -36,7 +36,7 @@ const tracksData = [
     id: "webdev",
     title: "Web Development",
     shortDesc: "Web Development adalah bidang yang mempelajari...",
-    image: "/studyclub/images/img%20about.png",
+    image: "/studyclub/images/pweb.png",
     paragraphs: [
       <p key="1">
         <span className="text-white font-bold text-xl mr-2">Web</span> 
@@ -60,7 +60,7 @@ const tracksData = [
     id: "datascience",
     title: "Data Science",
     shortDesc: "Data Science adalah bidang yang mempelajari...",
-    image: "/studyclub/images/img%20about.png",
+    image: "/studyclub/images/pdata.png",
     paragraphs: [
       <p key="1">
         <span className="text-white font-bold text-xl mr-2">Data</span> 

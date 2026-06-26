@@ -58,15 +58,49 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="flex-1 w-full relative flex justify-center lg:justify-end mb-16 lg:mb-0 animate-orbit">
-          <Image
-            src="/studyclub/images/sc orbit.png"
-            alt="Study Club App Mockup"
-            width={1000}
-            height={1000}
-            className="w-[85%] sm:w-full h-auto max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[850px] xl:max-w-[1000px] object-contain drop-shadow-2xl lg:translate-x-8 xl:translate-x-16 hover:scale-[1.02] transition-transform duration-500"
-            priority
-          />
+        <div className="flex-1 w-full relative flex justify-center lg:justify-end mb-16 lg:mb-0">
+          <div className="relative w-[85%] sm:w-full h-auto max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[850px] xl:max-w-[1000px] lg:translate-x-8 xl:translate-x-16 hover:scale-[1.02] transition-transform duration-500">
+            <Image
+              src="/studyclub/images/orbit home.png"
+              alt="Study Club App Mockup"
+              width={1000}
+              height={1000}
+              className="w-full h-auto object-contain drop-shadow-2xl"
+              priority
+            />
+            
+            <div className="absolute inset-0">
+
+              <Image
+                src="/studyclub/images/komp kiri.png"
+                alt="Komputer Kiri"
+                width={228}
+                height={150}
+                className="absolute w-[32.95%] h-auto animate-float drop-shadow-xl z-10"
+                style={{ left: '3.32%', top: '54.38%' }}
+              />
+              
+
+              <Image
+                src="/studyclub/images/komp atas.png"
+                alt="Komputer Atas"
+                width={141}
+                height={141}
+                className="absolute w-[20.38%] h-auto animate-float-delayed drop-shadow-xl z-10"
+                style={{ left: '21.97%', top: '14.49%' }}
+              />
+              
+
+              <Image
+                src="/studyclub/images/komp kanan.png"
+                alt="Komputer Kanan"
+                width={130}
+                height={179}
+                className="absolute w-[18.79%] h-auto animate-float-reverse drop-shadow-xl z-10"
+                style={{ left: '73.12%', top: '32.74%' }}
+              />
+            </div>
+          </div>
         </div>
       </main>
     </div>

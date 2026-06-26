@@ -60,9 +60,9 @@ export default function FormPendaftaran() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!angkatan || !kelas1 || !kelas2 || !bersedia) {
+    if (!angkatan || !kelas1 || !bersedia) {
       setPopupType('error');
-      setPopupMessage('Harap pilih angkatan, kelas, dan kesediaan terlebih dahulu.');
+      setPopupMessage('Harap melengkapi semua kolom yang wajib diisi terlebih dahulu.');
       setShowPopup(true);
       return;
     }
@@ -217,7 +217,9 @@ export default function FormPendaftaran() {
                 type="text" 
                 id="npm" 
                 value={npm}
-                onChange={(e) => setNpm(e.target.value)}
+                onChange={(e) => setNpm(e.target.value.replace(/\D/g, ''))}
+                pattern="\d+"
+                title="NPM hanya boleh berupa angka"
                 required
                 className="w-full px-4 py-3 lg:px-5 lg:py-4 bg-[#222230] border border-transparent rounded-lg text-white text-lg md:text-xl focus:outline-none focus:border-[#A259FF] transition-colors placeholder:text-gray-500" 
                 placeholder="Contoh: 2410XXXXXXXXX" 
@@ -299,7 +301,9 @@ export default function FormPendaftaran() {
                   <path fill="#2A2045" d="M8 4h3v7H8z" />
                 </svg>
               </div>
-              <label className="text-transparent bg-clip-text bg-gradient-to-r from-[#A259FF] to-[#FF8A8A] font-medium text-xl md:text-2xl">Pilihan Kelas Kedua</label>
+              <label className="text-transparent bg-clip-text bg-gradient-to-r from-[#A259FF] to-[#FF8A8A] font-medium text-xl md:text-2xl">
+                Pilihan Kelas Kedua <span className="text-gray-400 text-base md:text-lg ml-2 font-normal">(Opsional)</span>
+              </label>
             </div>
             <p className="text-gray-200 text-base md:text-lg mb-6">Pilih bidang yang ingin kamu pelajari.</p>
             
@@ -307,7 +311,7 @@ export default function FormPendaftaran() {
               {kelasOptions.map((opt) => (
                 <div 
                   key={opt.id} 
-                  onClick={() => setKelas2(opt.id)}
+                  onClick={() => setKelas2(kelas2 === opt.id ? '' : opt.id)}
                   className={`cursor-pointer flex flex-col items-center justify-center p-6 lg:p-8 rounded-2xl transition-all border-[1.5px] ${
                     kelas2 === opt.id 
                       ? 'bg-gradient-to-br from-[#A259FF]/20 to-[#FF8A8A]/20 border-white' 

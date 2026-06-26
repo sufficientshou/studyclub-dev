@@ -7,19 +7,39 @@ import { useState } from 'react';
 export default function About() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const images = [
-    "/studyclub/images/img%20about.png",
-    "/studyclub/images/hero%20sc.png",
-    "/studyclub/images/mentor%20web.png",
-    "/studyclub/images/bg%20learning.png"
+  const categories = [
+    {
+      title: "UI/UX",
+      images: [
+        "/studyclub/images/ui1.jpg",
+        "/studyclub/images/ui2.jpg",
+        "/studyclub/images/ui3.jpg"
+      ]
+    },
+    {
+      title: "Web Development",
+      images: [
+        "/studyclub/images/web1.jpg",
+        "/studyclub/images/web2.jpg",
+        "/studyclub/images/web3.jpg"
+      ]
+    },
+    {
+      title: "Cyber Security",
+      images: [
+        "/studyclub/images/cy1.jpg",
+        "/studyclub/images/cy2.jpg",
+        "/studyclub/images/cy3.jpg"
+      ]
+    }
   ];
 
   const handlePrev = () => {
-    setActiveIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setActiveIndex((prev) => (prev === 0 ? categories.length - 1 : prev - 1));
   };
 
   const handleNext = () => {
-    setActiveIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setActiveIndex((prev) => (prev === categories.length - 1 ? 0 : prev + 1));
   };
 
   return (
@@ -107,24 +127,24 @@ export default function About() {
               <div className="about-card w-full max-w-[320px] aspect-[4/3] transform -rotate-3 hover:rotate-0 transition-transform duration-300 cursor-pointer">
                 <div className="about-card-inner rounded-xl shadow-xl">
 
-                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden border-4 border-white">
+                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden">
                     <Image 
-                      src={images[(activeIndex + 0) % images.length]} 
-                      alt="Study Club About 1" 
+                      src={categories[activeIndex].images[0]} 
+                      alt={`${categories[activeIndex].title} 1`} 
                       fill
                       className="object-cover transition-all duration-500"
                     />
                   </div>
                   
 
-                  <div className="about-card-back bg-[#151515] rounded-xl overflow-hidden border-4 border-white">
+                  <div className="about-card-back bg-[#151515] rounded-xl overflow-hidden">
                     <div className="about-card-circle about-card-circle-purple"></div>
                     <div className="about-card-circle about-card-circle-pink"></div>
                     <div className="about-card-circle about-card-circle-cyan"></div>
                     <div className="about-card-back-content flex flex-col items-center justify-center">
                       <div className="text-center">
                         <p className="text-[10px] uppercase tracking-widest text-[#A259FF] font-semibold mb-1">Study Club 2025</p>
-                        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">UI/UX</h3>
+                        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">{categories[activeIndex].title}</h3>
                       </div>
                     </div>
                   </div>
@@ -135,24 +155,24 @@ export default function About() {
               <div className="about-card w-full max-w-[320px] aspect-[4/3] transform rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer z-10 md:-mt-8">
                 <div className="about-card-inner rounded-xl shadow-xl">
 
-                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden border-4 border-white">
+                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden">
                     <Image 
-                      src={images[(activeIndex + 1) % images.length]} 
-                      alt="Study Club About 2" 
+                      src={categories[activeIndex].images[1]} 
+                      alt={`${categories[activeIndex].title} 2`} 
                       fill
                       className="object-cover transition-all duration-500"
                     />
                   </div>
                   
 
-                  <div className="about-card-back bg-[#151515] rounded-xl overflow-hidden border-4 border-white">
+                  <div className="about-card-back bg-[#151515] rounded-xl overflow-hidden">
                     <div className="about-card-circle about-card-circle-purple"></div>
                     <div className="about-card-circle about-card-circle-pink"></div>
                     <div className="about-card-circle about-card-circle-cyan"></div>
                     <div className="about-card-back-content flex flex-col items-center justify-center">
                       <div className="text-center">
                         <p className="text-[10px] uppercase tracking-widest text-[#EB4688] font-semibold mb-1">Study Club 2025</p>
-                        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">UI/UX</h3>
+                        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">{categories[activeIndex].title}</h3>
                       </div>
                     </div>
                   </div>
@@ -163,24 +183,24 @@ export default function About() {
               <div className="about-card w-full max-w-[320px] aspect-[4/3] transform -rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer">
                 <div className="about-card-inner rounded-xl shadow-xl">
 
-                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden border-4 border-white">
+                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden">
                     <Image 
-                      src={images[(activeIndex + 2) % images.length]} 
-                      alt="Study Club About 3" 
+                      src={categories[activeIndex].images[2]} 
+                      alt={`${categories[activeIndex].title} 3`} 
                       fill
                       className="object-cover transition-all duration-500"
                     />
                   </div>
                   
 
-                  <div className="about-card-back bg-[#151515] rounded-xl overflow-hidden border-4 border-white">
+                  <div className="about-card-back bg-[#151515] rounded-xl overflow-hidden">
                     <div className="about-card-circle about-card-circle-purple"></div>
                     <div className="about-card-circle about-card-circle-pink"></div>
                     <div className="about-card-circle about-card-circle-cyan"></div>
                     <div className="about-card-back-content flex flex-col items-center justify-center">
                       <div className="text-center">
                         <p className="text-[10px] uppercase tracking-widest text-[#00D2FF] font-semibold mb-1">Study Club 2025</p>
-                        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">UI/UX</h3>
+                        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">{categories[activeIndex].title}</h3>
                       </div>
                     </div>
                   </div>
@@ -201,7 +221,7 @@ export default function About() {
           </div>
 
           <div className="flex items-center gap-2 mt-8">
-            {images.map((_, i) => (
+            {categories.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setActiveIndex(i)}
