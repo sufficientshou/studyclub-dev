@@ -127,13 +127,20 @@ export default function About() {
               <div className="about-card w-full max-w-[320px] aspect-[4/3] transform -rotate-3 hover:rotate-0 transition-transform duration-300 cursor-pointer">
                 <div className="about-card-inner rounded-xl shadow-xl">
 
-                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden">
-                    <Image 
-                      src={categories[activeIndex].images[0]} 
-                      alt={`${categories[activeIndex].title} 1`} 
-                      fill
-                      className="object-cover transition-all duration-500"
-                    />
+                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden relative">
+                    {categories.map((cat, idx) => (
+                      <Image
+                        key={idx}
+                        src={cat.images[0]}
+                        alt={`${cat.title} 1`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 320px"
+                        className={`object-cover transition-opacity duration-500 absolute inset-0 ${
+                          activeIndex === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                        }`}
+                        priority
+                      />
+                    ))}
                   </div>
                   
 
@@ -155,13 +162,20 @@ export default function About() {
               <div className="about-card w-full max-w-[320px] aspect-[4/3] transform rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer z-10 md:-mt-8">
                 <div className="about-card-inner rounded-xl shadow-xl">
 
-                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden">
-                    <Image 
-                      src={categories[activeIndex].images[1]} 
-                      alt={`${categories[activeIndex].title} 2`} 
-                      fill
-                      className="object-cover transition-all duration-500"
-                    />
+                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden relative">
+                    {categories.map((cat, idx) => (
+                      <Image
+                        key={idx}
+                        src={cat.images[1]}
+                        alt={`${cat.title} 2`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 320px"
+                        className={`object-cover transition-opacity duration-500 absolute inset-0 ${
+                          activeIndex === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                        }`}
+                        priority
+                      />
+                    ))}
                   </div>
                   
 
@@ -183,13 +197,20 @@ export default function About() {
               <div className="about-card w-full max-w-[320px] aspect-[4/3] transform -rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer">
                 <div className="about-card-inner rounded-xl shadow-xl">
 
-                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden">
-                    <Image 
-                      src={categories[activeIndex].images[2]} 
-                      alt={`${categories[activeIndex].title} 3`} 
-                      fill
-                      className="object-cover transition-all duration-500"
-                    />
+                  <div className="about-card-front bg-gray-800 rounded-xl overflow-hidden relative">
+                    {categories.map((cat, idx) => (
+                      <Image
+                        key={idx}
+                        src={cat.images[2]}
+                        alt={`${cat.title} 3`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 320px"
+                        className={`object-cover transition-opacity duration-500 absolute inset-0 ${
+                          activeIndex === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                        }`}
+                        priority
+                      />
+                    ))}
                   </div>
                   
 
