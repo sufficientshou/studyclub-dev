@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x, 22.x] # Disederhanakan ke versi Node LTS yang stabil untuk Next.js terbaru
+        node-version: [20.x, 22.x] 
 
     steps:
     - uses: actions/checkout@v4

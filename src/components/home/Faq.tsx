@@ -70,7 +70,7 @@ export default function Faq() {
       <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 z-10 flex flex-col items-center">
         <div className="text-center mb-6">
           <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold tracking-wide leading-[1.2] mb-2">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8E51FF] to-[#D84693]">Questions?</span> <span className="text-white">We've</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8E51FF] to-[#D84693]">Questions?</span> <span className="text-white">We&apos;ve</span>
             <br />
             <span className="text-white">Got</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8E51FF] to-[#D84693]">Answers</span>
           </h2>
