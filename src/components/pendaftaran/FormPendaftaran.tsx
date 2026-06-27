@@ -412,8 +412,8 @@ export default function FormPendaftaran() {
           <div className="flex justify-start mt-2">
             <button 
               type="submit" 
-              disabled={isSubmitting}
-              className={`flex items-center justify-center gap-3 px-5 py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-[#A259FF] to-[#EB4688] text-white font-medium text-base md:text-lg rounded-full transition-transform shadow-lg shadow-[#A259FF]/25 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:scale-[1.02]'}`}
+              disabled={isSubmitting || bersedia === 'Tidak'}
+              className={`flex items-center justify-center gap-3 px-5 py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-[#A259FF] to-[#EB4688] text-white font-medium text-base md:text-lg rounded-full transition-transform shadow-lg shadow-[#A259FF]/25 ${(isSubmitting || bersedia === 'Tidak') ? 'opacity-50 cursor-not-allowed saturate-50' : 'hover:scale-[1.02]'}`}
             >
               {isSubmitting ? 'Submitting...' : 'Submit Registration'}
               <div className="w-6 h-6 md:w-7 md:h-7 rounded-full bg-white flex items-center justify-center shrink-0">

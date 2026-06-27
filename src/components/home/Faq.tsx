@@ -5,28 +5,28 @@ import { useState } from 'react';
 
 const faqData = [
   {
-    question: "Apa itu study club?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    question: "Apa itu Study Club HIMTIKA?",
+    answer: "Study Club HIMTIKA adalah ruang kolaboratif dan inspiratif yang dirancang untuk memberikan mahasiswa informatika UNSIKA kesempatan mendalami ilmu di bidang IT. Melalui kegiatan ini, peserta dapat mengembangkan keterampilan teknis, berbagi wawasan, dan menjalin koneksi."
   },
   {
-    question: "Apa itu study club?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    question: "Kelas apa saja yang tersedia?",
+    answer: "Kami membuka berbagai kelas yang relevan dengan industri saat ini, seperti Web Development, UI/UX Design, dan Data Science."
   },
   {
-    question: "Ada materi apa saja di study club?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    question: "Siapa saja yang boleh mengikuti?",
+    answer: "Kegiatan ini terbuka untuk seluruh mahasiswa aktif Informatika UNSIKA yang ingin mendalami keterampilan teknis, berkolaborasi, dan berbagi wawasan di bidang teknologi informasi."
   },
   {
-    question: "Ada materi apa saja di study club?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    question: "Bagaimana sistem pembelajarannya?",
+    answer: "Pembelajaran dilakukan secara kolaboratif melalui sesi hybrid (online dan offline) dengan bimbingan mentor. Fokus utamanya adalah pada praktik langsung dan pengerjaan proyek untuk membangun keterampilan teknis."
   },
   {
-    question: "Apa benefit ikut study club?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    question: "Apakah ada biaya pendaftaran?",
+    answer: "Tidak ada. Study Club HIMTIKA 100% gratis dan tidak dipungut biaya apapun, sebagai bentuk dedikasi kami untuk kemajuan bersama."
   },
   {
-    question: "Apa benefit ikut study club?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    question: "Apa yang didapat setelah menyelesaikan kelas?",
+    answer: "Anda akan mendapatkan portofolio proyek (keterampilan teknis), e-sertifikat, serta kesempatan berharga untuk menjalin koneksi dan berbagi wawasan dengan para mentor dan sesama peserta."
   }
 ];
 
