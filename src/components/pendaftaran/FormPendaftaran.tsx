@@ -90,7 +90,10 @@ export default function FormPendaftaran() {
         },
         body: JSON.stringify(dataMahasiswa)
       });
-      router.push('/terimakasih');
+      const queryParams = new URLSearchParams();
+      if (kelas1) queryParams.append('kelas1', kelas1);
+      if (kelas2) queryParams.append('kelas2', kelas2);
+      router.push(`/terimakasih?${queryParams.toString()}`);
     } catch (error) {
       console.error("Error Koneksi:", error);
       setPopupType('error');
