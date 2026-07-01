@@ -113,6 +113,7 @@ export default function FormPendaftaran() {
             src="/studyclub/images/bg%20bintang.png"
             alt="Stars Background Top"
             fill
+            sizes="100vw"
             className="object-cover object-top opacity-80"
           />
         </div>
@@ -122,6 +123,7 @@ export default function FormPendaftaran() {
             src="/studyclub/images/bg%20bintang.png"
             alt="Stars Background Bottom"
             fill
+            sizes="100vw"
             className="object-cover object-bottom opacity-80"
           />
         </div>
@@ -162,7 +164,7 @@ export default function FormPendaftaran() {
           Begin Your <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-[#A259FF] to-[#FF8A8A]">Registration</span>
         </h2>
         <p className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-12 lg:mb-16 text-center text-white">
-          67 Juni - 69 Juli 2026
+          5 Juli - 15 Juli 2026
         </p>
         
         <form onSubmit={handleSubmit} className="flex flex-col gap-6 lg:gap-8 w-full">

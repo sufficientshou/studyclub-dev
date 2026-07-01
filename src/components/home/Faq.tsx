@@ -125,10 +125,14 @@ export default function Faq() {
               </button>
               
               <div 
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}
+                className={`grid transition-all duration-300 ease-in-out ${openIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
               >
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-[20px] p-5 text-white/90 text-sm md:text-[15px] leading-relaxed">
-                  {faq.answer}
+                <div className="overflow-hidden min-h-0">
+                  <div className="pt-3 pb-2 px-1">
+                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-[20px] p-5 md:p-6 text-white/90 text-sm md:text-[15px] leading-relaxed">
+                      {faq.answer}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
