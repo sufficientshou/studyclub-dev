@@ -95,7 +95,7 @@ export default function Learning() {
             alt="Learning Background"
             fill
             className="object-cover object-bottom w-full h-full"
-            quality={100}
+            sizes="100vw"
           />
           <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#01031A] to-transparent pointer-events-none"></div>
           <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#01031A] to-transparent pointer-events-none"></div>
@@ -173,6 +173,7 @@ export default function Learning() {
                   src={selectedTrack.image} 
                   alt={selectedTrack.title} 
                   fill 
+                  sizes="(max-width: 420px) 100vw, 420px"
                   className="object-cover"
                 />
               </div>

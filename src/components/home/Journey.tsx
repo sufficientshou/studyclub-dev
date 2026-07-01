@@ -87,8 +87,8 @@ export default function Journey() {
         .timeline-line {
           position: absolute;
           left: calc(1rem + 18px);
-          top: 36px;
-          bottom: 36px;
+          top: 60px;
+          bottom: 60px;
           width: 2px;
           background: linear-gradient(to bottom, #705DF2 0%, #705DF2 30%, #C846A3 60%, #E23D80 85%, #EB498D 100%);
           transform: translateX(-50%);
@@ -101,8 +101,8 @@ export default function Journey() {
         @media (min-width: 768px) {
           .timeline-line {
             left: 50%;
-            top: 56px;
-            bottom: 44px;
+            top: 60px;
+            bottom: 60px;
             transform: translateX(-50%);
           }
         }
@@ -117,6 +117,7 @@ export default function Journey() {
             src="/studyclub/images/bg%20bintang.png"
             alt="Stars Background"
             fill
+            sizes="100vw"
             className="object-cover object-center opacity-80"
           />
         </div>

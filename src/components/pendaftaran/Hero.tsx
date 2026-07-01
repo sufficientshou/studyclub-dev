@@ -10,9 +10,9 @@ export default function Hero() {
           src="/studyclub/images/bg%20pendaftaran.png"
           alt="Hero Background"
           fill
+          sizes="100vw"
           className="w-full h-full object-cover object-center"
           priority
-          quality={100}
         />
         <div className="absolute bottom-0 left-0 w-full h-48 lg:h-64 bg-gradient-to-t from-[#01031A] via-[#01031A]/80 to-transparent pointer-events-none"></div>
       </div>
@@ -64,6 +64,7 @@ export default function Hero() {
               alt="Planet Uranus"
               width={800}
               height={800}
+              sizes="(max-width: 1024px) 75vw, 50vw"
               className="w-[75%] h-auto object-contain drop-shadow-2xl animate-spin-slow"
               priority
             />
@@ -75,6 +76,7 @@ export default function Hero() {
                 width={150}
                 height={150}
                 className="w-full h-auto object-contain drop-shadow-lg"
+                priority
               />
             </div>
             
@@ -85,6 +87,7 @@ export default function Hero() {
                 width={150}
                 height={150}
                 className="w-full h-auto object-contain drop-shadow-lg"
+                priority
               />
             </div>
             
@@ -95,6 +98,7 @@ export default function Hero() {
                 width={150}
                 height={150}
                 className="w-full h-auto object-contain drop-shadow-lg"
+                priority
               />
             </div>
             
@@ -105,6 +109,7 @@ export default function Hero() {
                 width={300}
                 height={300}
                 className="w-full h-auto object-contain drop-shadow-2xl"
+                priority
               />
             </div>
           </div>

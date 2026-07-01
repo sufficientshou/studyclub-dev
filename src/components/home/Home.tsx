@@ -9,9 +9,9 @@ export default function Home() {
           src="/studyclub/images/bg%20hero.png"
           alt="Hero Background"
           fill
+          sizes="100vw"
           className="w-full h-full object-cover object-center"
           priority
-          quality={100}
         />
         <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#01031A] via-[#01031A]/80 to-transparent pointer-events-none"></div>
       </div>
@@ -65,6 +65,7 @@ export default function Home() {
               alt="Study Club App Mockup"
               width={1000}
               height={1000}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="w-full h-auto object-contain drop-shadow-2xl"
               priority
             />
@@ -78,6 +79,7 @@ export default function Home() {
                 height={150}
                 className="absolute w-[32.95%] h-auto animate-float drop-shadow-xl z-10"
                 style={{ left: '3.32%', top: '54.38%' }}
+                priority
               />
               
 
@@ -88,6 +90,7 @@ export default function Home() {
                 height={141}
                 className="absolute w-[20.38%] h-auto animate-float-delayed drop-shadow-xl z-10"
                 style={{ left: '21.97%', top: '14.49%' }}
+                priority
               />
               
 
@@ -98,6 +101,7 @@ export default function Home() {
                 height={179}
                 className="absolute w-[18.79%] h-auto animate-float-reverse drop-shadow-xl z-10"
                 style={{ left: '73.12%', top: '32.74%' }}
+                priority
               />
             </div>
           </div>
