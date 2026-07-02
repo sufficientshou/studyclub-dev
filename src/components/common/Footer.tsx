@@ -36,29 +36,29 @@ export default function Footer() {
             <div>
               <h3 className="text-white font-bold mb-4 lg:mb-6 tracking-wide text-base lg:text-lg">Media</h3>
               <ul className="space-y-3 lg:space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Berita</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Artikel HIMTIKA</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Beasiswa</Link></li>
+                <li><Link href="https://www.instagram.com/himtika_unsika/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Berita</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/hikode/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Artikel HIMTIKA</Link></li>
+                <li><Link href="https://www.instagram.com/himtika_unsika/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Beasiswa</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Kegiatan Mahasiswa</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="text-white font-bold mb-4 lg:mb-6 tracking-wide text-base lg:text-lg">Event</h3>
               <ul className="space-y-3 lg:space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">SEMANTIK 8.0</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">PEKAN IT</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">LKMM-PD</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Diesnatalis</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/pekan-it/detail-semantik/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">SEMANTIK 10.0</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/pekan-it/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">PEKAN IT</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/lkmmpd/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">LKMM-PD</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/diesnatalis/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Diesnatalis</Link></li>
               </ul>
             </div>
             <div className="col-span-2 sm:col-span-1 mt-4 sm:mt-0">
               <h3 className="text-white font-bold mb-4 lg:mb-6 tracking-wide text-base lg:text-lg">Aplikasi Publik</h3>
               <ul className="grid grid-cols-2 sm:grid-cols-1 gap-3 lg:gap-4 space-y-0 lg:space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Corporation</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">HIMTIKA Award</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/corporation/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Corporation</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/himtika-awards/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">HIMTIKA Award</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Study Club</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Calendar</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Studio IT</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/kalender/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Calendar</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/corporation/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Studio IT</Link></li>
               </ul>
             </div>
           </div>

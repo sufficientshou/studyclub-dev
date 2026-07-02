@@ -9,33 +9,33 @@ export default function Mentor() {
 
   const mentors = [
     {
-      name: "Mahesa Nabil",
+      name: "Brandon Hanif Lastomo",
       role: "UI/UX Design",
       socials: {
-        linkedin: "#",
-        instagram: "#",
+        linkedin: "https://www.linkedin.com/in/brandonlastomo/",
+        instagram: "https://www.instagram.com/brandonlast_",
         website: "#",
-        github: "#"
+        github: "https://github.com/BrandonLastomo/"
       }
     },
     {
       name: "Aldi Wijaya",
       role: "Web Development",
       socials: {
-        linkedin: "#",
-        instagram: "#",
-        website: "#",
-        github: "#"
+        linkedin: "https://www.linkedin.com/in/aldi-wijaya/",
+        instagram: "https://www.instagram.com/masami911/",
+        website: "aldidev.vercel.app",
+        github: "https://github.com/KenzArz"
       }
     },
     {
-      name: "Cakra Mukti H",
+      name: "Kintan Dyah Astuti ",
       role: "Data Science",
       socials: {
-        linkedin: "#",
-        instagram: "#",
+        linkedin: "https://www.linkedin.com/in/kintandyahastuti/",
+        instagram: "https://www.instagram.com/kintandyah_/",
         website: "#",
-        github: "#"
+        github: "https://github.com/KintanDyahAstuti"
       }
     }
   ];
