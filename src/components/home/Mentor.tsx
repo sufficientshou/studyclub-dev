@@ -11,6 +11,11 @@ export default function Mentor() {
     {
       name: "Brandon Hanif Lastomo",
       role: "UI/UX Design",
+      image: "/studyclub/images/mentor%20desain.png",
+      decorations: [
+        { src: "/studyclub/images/pigmuy.png", className: "absolute top-[28%] left-[5%] w-[20%] md:w-[16%] aspect-square object-contain transition-transform duration-700 -rotate-12 group-hover:-translate-y-4 group-hover:-translate-x-4 group-hover:-rotate-12 drop-shadow-2xl" },
+        { src: "/studyclub/images/komp%20kanan.png", className: "absolute top-[16%] right-[5%] w-[32%] md:w-[28%] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:translate-x-4 group-hover:rotate-6 drop-shadow-2xl" }
+      ],
       socials: {
         linkedin: "https://www.linkedin.com/in/brandonlastomo/",
         instagram: "https://www.instagram.com/brandonlast_",
@@ -21,6 +26,10 @@ export default function Mentor() {
     {
       name: "Aldi Wijaya",
       role: "Web Development",
+      decorations: [
+        { src: "/studyclub/images/html.png", className: "absolute top-[28%] left-[5%] w-[24%] md:w-[20%] aspect-square object-contain transition-transform duration-700 -rotate-12 group-hover:-translate-y-4 group-hover:-translate-x-4 group-hover:-rotate-12 drop-shadow-2xl" },
+        { src: "/studyclub/images/komp%20atas.png", className: "absolute top-[16%] right-[5%] w-[32%] md:w-[28%] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:translate-x-4 group-hover:rotate-6 drop-shadow-2xl" }
+      ],
       socials: {
         linkedin: "https://www.linkedin.com/in/aldi-wijaya/",
         instagram: "https://www.instagram.com/masami911/",
@@ -31,6 +40,12 @@ export default function Mentor() {
     {
       name: "Kintan Dyah Astuti ",
       role: "Data Science",
+      image: "/studyclub/images/mentor%20data.png",
+      wrapperClass: "scale-[1.4] md:scale-[1.55] origin-bottom",
+      decorations: [
+        { src: "/studyclub/images/pituy.png", className: "absolute top-[28%] left-[5%] w-[24%] md:w-[20%] scale-[1.7] md:scale-[1.9] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:-translate-x-4 group-hover:-rotate-6 drop-shadow-2xl" },
+        { src: "/studyclub/images/komp%20kiri.png", className: "absolute top-[16%] right-[5%] w-[32%] md:w-[28%] scale-[1.3] md:scale-[1.5] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:translate-x-4 group-hover:rotate-6 drop-shadow-2xl" }
+      ],
       socials: {
         linkedin: "https://www.linkedin.com/in/kintandyahastuti/",
         instagram: "https://www.instagram.com/kintandyah_/",
@@ -83,12 +98,29 @@ export default function Mentor() {
             >
               <div className="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none">
                 <Image 
-                  src="/studyclub/images/mentor%20web.png"
+                  src="/studyclub/images/bg%20mentor.png"
                   alt={mentor.name}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
+                
+                {mentor.decorations?.map((dec, i) => (
+                  <div key={i} className={dec.className}>
+                    <Image src={dec.src} alt="decoration" fill className="object-contain" />
+                  </div>
+                ))}
+                {mentor.image && (
+                  <div className={`absolute inset-0 ${mentor.wrapperClass || ''}`}>
+                    <Image 
+                      src={mentor.image}
+                      alt={`${mentor.name} photo`}
+                      fill
+                      className="object-contain object-bottom transition-transform duration-500 group-hover:scale-105 scale-90 md:scale-100 origin-bottom"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#110729]/90 via-transparent to-transparent pointer-events-none"></div>
               </div>
 
@@ -104,7 +136,7 @@ export default function Mentor() {
                       e.stopPropagation();
                       setActivePopup(activePopup === index ? null : index);
                     }}
-                    className={`relative z-20 w-10 h-10 rounded-full border border-white flex items-center justify-center transition-all duration-300 shadow-md ${activePopup === index ? 'bg-white text-[#110729] rotate-90' : 'text-white group-hover:bg-white group-hover:text-[#110729]'}`}
+                    className={`relative z-20 w-10 h-10 rounded-full border border-white flex items-center justify-center transition-all duration-300 shadow-md ${activePopup === index ? 'bg-white text-[#110729] rotate-90' : 'text-white hover:bg-white hover:text-[#110729]'}`}
                   >
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
