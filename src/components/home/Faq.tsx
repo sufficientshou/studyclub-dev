@@ -81,7 +81,9 @@ export default function Faq() {
         </p>
 
         <Link
-          href="/kontak"
+          href="https://www.instagram.com/studyclub_id?igsh=MW1pZnM2amR5MHF1aA=="
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 px-6 py-2.5 mb-16 bg-gradient-to-r from-[#8E51FF] to-[#D84693] text-white font-medium rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#D84693]/20"
         >
           <span className="text-[15px] font-medium tracking-wide">Kontak Kami</span>

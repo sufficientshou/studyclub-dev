@@ -138,7 +138,6 @@ export default function About() {
                         className={`object-cover transition-opacity duration-500 absolute inset-0 ${
                           activeIndex === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'
                         }`}
-                        priority
                       />
                     ))}
                   </div>
@@ -173,7 +172,6 @@ export default function About() {
                         className={`object-cover transition-opacity duration-500 absolute inset-0 ${
                           activeIndex === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'
                         }`}
-                        priority
                       />
                     ))}
                   </div>
@@ -208,7 +206,6 @@ export default function About() {
                         className={`object-cover transition-opacity duration-500 absolute inset-0 ${
                           activeIndex === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'
                         }`}
-                        priority
                       />
                     ))}
                   </div>

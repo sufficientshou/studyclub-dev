@@ -1,62 +1,5 @@
-'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
-import { Suspense } from 'react';
-
-const GRUP_LINKS = {
-  'UI/UX': 'https://chat.whatsapp.com/UIUX_GROUP_LINK',
-  'Web Dev': 'https://chat.whatsapp.com/WEBDEV_GROUP_LINK',
-  'Data Science': 'https://chat.whatsapp.com/DATASCIENCE_GROUP_LINK',
-};
-
-function GrupContent() {
-  const searchParams = useSearchParams();
-  const kelas1 = searchParams.get('kelas1');
-  const kelas2 = searchParams.get('kelas2');
-
-  const selectedClasses = [kelas1, kelas2].filter(Boolean) as string[];
-
-  if (selectedClasses.length === 0) {
-    return (
-      <Link
-        href="#"
-        className="flex items-center justify-center gap-3 px-1.5 py-1.5 pl-6 bg-gradient-to-r from-[#8E51FF] to-[#D84693] text-white font-medium rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-black/20 mt-6"
-      >
-        <span className="text-base font-semibold tracking-wide">Gabung Grup WhatsApp</span>
-        <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center shrink-0">
-          <svg className="w-4 h-4 text-[#8E51FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-          </svg>
-        </div>
-      </Link>
-    );
-  }
-
-  return (
-    <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-6">
-      {selectedClasses.map((kelas, index) => {
-        const link = GRUP_LINKS[kelas as keyof typeof GRUP_LINKS] || '#';
-        return (
-          <Link
-            key={index}
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 px-1.5 py-1.5 pl-6 bg-gradient-to-r from-[#8E51FF] to-[#D84693] text-white font-medium rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-black/20"
-          >
-            <span className="text-base font-semibold tracking-wide">Grup {kelas}</span>
-            <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center shrink-0">
-              <svg className="w-4 h-4 text-[#8E51FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
-            </div>
-          </Link>
-        );
-      })}
-    </div>
-  );
-}
 
 export default function Grup() {
   return (
@@ -97,7 +40,6 @@ export default function Grup() {
                 alt="WhatsApp"
                 fill
                 className="object-contain"
-                priority
                 sizes="(max-width: 768px) 240px, 350px"
               />
             </div>
@@ -110,15 +52,26 @@ export default function Grup() {
             </h2>
             
             <p className="text-white/80 text-sm sm:text-base lg:text-[17px] font-light leading-relaxed max-w-xl">
-              Langkah selanjutnya adalah bergabung ke grup WhatsApp sesuai pilihan kelas yang kamu daftarkan untuk informasi terbaru.
+              Langkah selanjutnya adalah bergabung ke grup WhatsApp untuk mendapatkan informasi terbaru seputar Study Club.
             </p>
 
-            <Suspense fallback={<div className="mt-6 text-white">Memuat grup...</div>}>
-              <GrupContent />
-            </Suspense>
+            <Link
+              href="https://chat.whatsapp.com/LALHmUtihhmBznqKhCTEDI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 px-1.5 py-1.5 pl-6 bg-gradient-to-r from-[#8E51FF] to-[#D84693] text-white font-medium rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-black/20 mt-6"
+            >
+              <span className="text-base font-semibold tracking-wide">Gabung Grup WhatsApp</span>
+              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center shrink-0">
+                <svg className="w-4 h-4 text-[#8E51FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
     </section>
   );
 }
+

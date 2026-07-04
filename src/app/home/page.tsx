@@ -1,10 +1,12 @@
 import Home from '@/components/home/Home';
-import About from '@/components/home/About';
-import Learning from '@/components/home/Learning';
-import Journey from '@/components/home/Journey';
-import Mentor from '@/components/home/Mentor';
-import Daftar from '@/components/home/Daftar';
-import Faq from '@/components/home/Faq';
+import dynamic from 'next/dynamic';
+
+const About = dynamic(() => import('@/components/home/About'), { ssr: true });
+const Learning = dynamic(() => import('@/components/home/Learning'), { ssr: true });
+const Mentor = dynamic(() => import('@/components/home/Mentor'), { ssr: true });
+const Journey = dynamic(() => import('@/components/home/Journey'), { ssr: true });
+const Daftar = dynamic(() => import('@/components/home/Daftar'), { ssr: true });
+const Faq = dynamic(() => import('@/components/home/Faq'), { ssr: true });
 
 export default function HomePage() {
   return (

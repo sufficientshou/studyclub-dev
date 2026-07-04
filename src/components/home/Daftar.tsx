@@ -40,7 +40,6 @@ export default function Daftar() {
                 alt="Rocket Mascot"
                 fill
                 className="object-contain"
-                priority
                 sizes="(max-width: 768px) 240px, 350px"
               />
             </div>

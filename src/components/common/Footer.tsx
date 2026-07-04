@@ -56,7 +56,7 @@ export default function Footer() {
               <ul className="grid grid-cols-2 sm:grid-cols-1 gap-3 lg:gap-4 space-y-0 lg:space-y-4">
                 <li><Link href="https://himtika.cs.unsika.ac.id/corporation/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Corporation</Link></li>
                 <li><Link href="https://himtika.cs.unsika.ac.id/himtika-awards/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">HIMTIKA Award</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Study Club</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/studyclub/" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Study Club</Link></li>
                 <li><Link href="https://himtika.cs.unsika.ac.id/kalender/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Calendar</Link></li>
                 <li><Link href="https://himtika.cs.unsika.ac.id/corporation/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Studio IT</Link></li>
               </ul>

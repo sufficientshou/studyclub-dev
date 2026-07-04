@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -49,7 +51,11 @@ export default function Home() {
             </Link>
             <div className="w-full sm:w-auto rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300">
               <a
-                href="#about"
+                href="/studyclub/home"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="flex items-center justify-center px-8 py-3 bg-[#020413] rounded-full text-white font-medium h-full w-full"
               >
                 Learn more
