@@ -13,8 +13,15 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
 
+  // Normalize pathname to handle trailing slashes
+  const normalizedPath = pathname?.endsWith('/') && pathname !== '/' 
+    ? pathname.slice(0, -1) 
+    : pathname || '/';
+  
+  const isHomePage = normalizedPath === '/home' || normalizedPath === '/';
+
   useEffect(() => {
-    if (pathname === '/home' || pathname === '/') {
+    if (isHomePage) {
       const target = sessionStorage.getItem('scrollTarget');
       if (target) {
         sessionStorage.removeItem('scrollTarget');
@@ -26,13 +33,13 @@ export default function Navbar() {
         }, 100);
       }
     }
-  }, [pathname]);
+  }, [pathname, isHomePage]);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
     setIsOpen(false);
     
-    if (pathname === '/home' || pathname === '/') {
+    if (isHomePage) {
       const element = document.getElementById(targetId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -137,7 +144,7 @@ export default function Navbar() {
           {pathname !== '/pendaftaran' && (
             <div className="rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300 ml-2">
               <Link
-                href="/pendaftaran"
+                href="/?status=closed"
                 className="flex items-center justify-center px-6 py-2 bg-[#020413] rounded-full text-white font-medium h-full w-full"
               >
                 Register
@@ -164,7 +171,7 @@ export default function Navbar() {
           {pathname !== '/pendaftaran' && (
             <div className="w-full mt-2 rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300">
               <Link 
-                href="/pendaftaran" 
+                href="/?status=closed" 
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-center px-4 py-2.5 bg-[#020413] rounded-full text-white font-medium h-full w-full"
               >

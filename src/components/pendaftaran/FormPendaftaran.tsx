@@ -214,16 +214,18 @@ export default function FormPendaftaran() {
                     <path d="M0 96l576 0c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96zm0 32L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-288L0 128zM64 405.3c0-29.5 23.9-53.3 53.3-53.3l117.3 0c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7L74.7 416c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z" />
                   </svg>
                 </div>
-                <label htmlFor="npm" className="text-transparent bg-clip-text bg-gradient-to-r from-[#A259FF] to-[#FF8A8A] font-medium text-xl md:text-2xl">NPM</label>
+                <label htmlFor="npm" className="text-transparent bg-clip-text bg-gradient-to-r from-[#A259FF] to-[#FF8A8A] font-medium text-xl md:text-2xl">
+                  NPM <span className="text-gray-400 text-base md:text-lg ml-2 font-normal">(Isi &quot;-&quot; jika belum memiliki NPM)</span>
+                </label>
               </div>
               <p className="text-gray-200 text-base md:text-lg mb-6">Masukkan nomor pokok mahasiswa anda.</p>
               <input 
                 type="text" 
                 id="npm" 
                 value={npm}
-                onChange={(e) => setNpm(e.target.value.replace(/\D/g, ''))}
-                pattern="\d+"
-                title="NPM hanya boleh berupa angka"
+                onChange={(e) => setNpm(e.target.value.replace(/[^\d-]/g, ''))}
+                pattern="[\d-]+"
+                title="NPM hanya boleh berupa angka atau tanda strip (-)"
                 required
                 className="w-full px-4 py-3 lg:px-5 lg:py-4 bg-[#222230] border border-transparent rounded-lg text-white text-lg md:text-xl focus:outline-none focus:border-[#A259FF] transition-colors placeholder:text-gray-500" 
                 placeholder="Contoh: 2410XXXXXXXXX" 

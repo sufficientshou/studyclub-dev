@@ -35,7 +35,7 @@ export default function Mentor() {
       socials: {
         linkedin: "https://www.linkedin.com/in/aldi-wijaya/",
         instagram: "https://www.instagram.com/masami911/",
-        website: "aldidev.vercel.app",
+        website: "https://aldidev.vercel.app",
         github: "https://github.com/KenzArz"
       }
     },

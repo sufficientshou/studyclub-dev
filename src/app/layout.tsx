@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/common/Navbar';
 import Footer from '@/components/common/Footer';
 import FloatingButton from '@/components/common/FloatingButton';
+import PopupClosed from '@/components/common/PopupClosed';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -34,6 +35,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <FloatingButton />
+        <PopupClosed />
       </body>
     </html>
   );

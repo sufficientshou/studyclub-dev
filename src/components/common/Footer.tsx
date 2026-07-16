@@ -39,14 +39,14 @@ export default function Footer() {
                 <li><Link href="https://www.instagram.com/himtika_unsika/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Berita</Link></li>
                 <li><Link href="https://himtika.cs.unsika.ac.id/hikode/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Artikel HIMTIKA</Link></li>
                 <li><Link href="https://www.instagram.com/himtika_unsika/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Beasiswa</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Kegiatan Mahasiswa</Link></li>
+                <li><Link href="https://www.instagram.com/himtika_unsika/" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Kegiatan Mahasiswa</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="text-white font-bold mb-4 lg:mb-6 tracking-wide text-base lg:text-lg">Event</h3>
               <ul className="space-y-3 lg:space-y-4">
-                <li><Link href="https://himtika.cs.unsika.ac.id/pekan-it/detail-semantik/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">SEMANTIK 10.0</Link></li>
-                <li><Link href="https://himtika.cs.unsika.ac.id/pekan-it/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">PEKAN IT</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/pekan-it/detail-semantik/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Pekan IT: Semantik</Link></li>
+                <li><Link href="https://himtika.cs.unsika.ac.id/pekan-it/detail-nic/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Pekan IT: NIC</Link></li>
                 <li><Link href="https://himtika.cs.unsika.ac.id/lkmmpd/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">LKMM-PD</Link></li>
                 <li><Link href="https://himtika.cs.unsika.ac.id/diesnatalis/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm lg:text-base">Diesnatalis</Link></li>
               </ul>
@@ -77,7 +77,7 @@ export default function Footer() {
               height={24}
               className="w-5 h-5 md:w-6 md:h-6 object-contain"
             />
-            <span className="text-white font-semibold text-sm tracking-wider">HIMTIKA 2025</span>
+            <span className="text-white font-semibold text-sm tracking-wider">HIMTIKA 2026</span>
           </div>
         </div>
         
