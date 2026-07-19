@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+import Hero from '@/components/pendaftaran/Hero';
+import FormPendaftaran from '@/components/pendaftaran/FormPendaftaran';
 
 export default function PendaftaranPage() {
-  redirect('/?status=closed');
+  return (
+    <main>
+      <Hero />
+      <FormPendaftaran />
+    </main>
+  );
 }

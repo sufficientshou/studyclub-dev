@@ -144,7 +144,7 @@ export default function Navbar() {
           {pathname !== '/pendaftaran' && (
             <div className="rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300 ml-2">
               <Link
-                href="/?status=closed"
+                href="/pendaftaran"
                 className="flex items-center justify-center px-6 py-2 bg-[#020413] rounded-full text-white font-medium h-full w-full"
               >
                 Register
@@ -171,7 +171,7 @@ export default function Navbar() {
           {pathname !== '/pendaftaran' && (
             <div className="w-full mt-2 rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300">
               <Link 
-                href="/?status=closed" 
+                href="/pendaftaran" 
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-center px-4 py-2.5 bg-[#020413] rounded-full text-white font-medium h-full w-full"
               >

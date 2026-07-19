@@ -56,7 +56,7 @@ export default function Daftar() {
             </p>
 
             <Link
-              href="/?status=closed"
+              href="/pendaftaran"
               className="flex items-center justify-center gap-3 px-1.5 py-1.5 pl-6 bg-gradient-to-r from-[#8E51FF] to-[#D84693] text-white font-medium rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-black/20"
             >
               <span className="text-base font-semibold tracking-wide">Daftar</span>
