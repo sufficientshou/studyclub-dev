@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/common/Navbar';
 import Footer from '@/components/common/Footer';
 import FloatingButton from '@/components/common/FloatingButton';
+import { RegistrationProvider } from '@/context/RegistrationContext';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -28,12 +29,14 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <Navbar />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
-        <FloatingButton />
+        <RegistrationProvider>
+          <Navbar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+          <FloatingButton />
+        </RegistrationProvider>
       </body>
     </html>
   );

@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 
+import { useRegistrationModal } from '@/context/RegistrationContext';
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -12,8 +14,8 @@ export default function Navbar() {
   
   const pathname = usePathname();
   const router = useRouter();
+  const { openClosedModal } = useRegistrationModal();
 
-  // Normalize pathname to handle trailing slashes
   const normalizedPath = pathname?.endsWith('/') && pathname !== '/' 
     ? pathname.slice(0, -1) 
     : pathname || '/';
@@ -141,16 +143,14 @@ export default function Navbar() {
           <a href="/studyclub/home" onClick={(e) => handleNavClick(e, 'class')} className="text-white hover:text-gray-300 transition-colors text-xl font-medium">
             Class
           </a>
-          {pathname !== '/pendaftaran' && (
-            <div className="rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300 ml-2">
-              <Link
-                href="/pendaftaran"
-                className="flex items-center justify-center px-6 py-2 bg-[#020413] rounded-full text-white font-medium h-full w-full"
-              >
-                Register
-              </Link>
-            </div>
-          )}
+          <div className="rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300 ml-2">
+            <button
+              onClick={openClosedModal}
+              className="flex items-center justify-center px-6 py-2 bg-[#020413] rounded-full text-white font-medium h-full w-full"
+            >
+              Register
+            </button>
+          </div>
         </div>
       </div>
 
@@ -168,17 +168,17 @@ export default function Navbar() {
           <a href="/studyclub/home" onClick={(e) => handleNavClick(e, 'class')} className="w-full px-4 py-3 text-gray-200 hover:text-white hover:bg-white/10 rounded-xl transition-all text-base font-medium tracking-wide">
             Class
           </a>
-          {pathname !== '/pendaftaran' && (
-            <div className="w-full mt-2 rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300">
-              <Link 
-                href="/pendaftaran" 
-                onClick={() => setIsOpen(false)}
-                className="flex items-center justify-center px-4 py-2.5 bg-[#020413] rounded-full text-white font-medium h-full w-full"
-              >
-                Register
-              </Link>
-            </div>
-          )}
+          <div className="w-full mt-2 rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300">
+            <button 
+              onClick={() => {
+                setIsOpen(false);
+                openClosedModal();
+              }}
+              className="flex items-center justify-center px-4 py-2.5 bg-[#020413] rounded-full text-white font-medium h-full w-full"
+            >
+              Register
+            </button>
+          </div>
         </div>
       )}
     </nav>

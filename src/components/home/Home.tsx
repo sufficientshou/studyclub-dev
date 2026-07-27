@@ -1,9 +1,11 @@
 "use client";
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRegistrationModal } from '@/context/RegistrationContext';
 
 export default function Home() {
+  const { openClosedModal } = useRegistrationModal();
+
   return (
     <div id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020413]">
       <div className="absolute inset-0 z-0">
@@ -32,8 +34,8 @@ export default function Home() {
             &quot;Upgrade Your Skills, Unlock Your Potential&quot;
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start items-center mb-8 sm:mb-24 lg:mb-0 w-full sm:w-auto px-4 sm:px-0">
-            <Link
-              href="/pendaftaran"
+            <button
+              onClick={openClosedModal}
               className="w-full sm:w-auto flex items-center justify-center gap-3 px-1.5 py-1.5 pl-6 bg-gradient-to-r from-[#B05BFF] to-[#EB4688] text-white font-medium rounded-full hover:scale-105 transition-transform duration-300"
             >
               <span>Join Study Club</span>
@@ -48,7 +50,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                 </svg>
               </div>
-            </Link>
+            </button>
             <div className="w-full sm:w-auto rounded-full bg-gradient-to-r from-[#B05BFF] to-[#EB4688] p-[1px] hover:scale-105 transition-transform duration-300">
               <a
                 href="/studyclub/home"

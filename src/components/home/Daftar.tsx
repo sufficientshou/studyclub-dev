@@ -1,7 +1,11 @@
+"use client";
+
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRegistrationModal } from '@/context/RegistrationContext';
 
 export default function Daftar() {
+  const { openClosedModal } = useRegistrationModal();
+
   return (
     <section id="daftar" className="relative w-full bg-[#01031A] py-16 md:py-20 lg:py-28 flex flex-col items-center overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -55,8 +59,8 @@ export default function Daftar() {
               Mulai perjalanan belajarmu bersama Study Club dan kembangkan kemampuanmu di bidang teknologi bersama komunitas Informatika Unsika.
             </p>
 
-            <Link
-              href="/pendaftaran"
+            <button
+              onClick={openClosedModal}
               className="flex items-center justify-center gap-3 px-1.5 py-1.5 pl-6 bg-gradient-to-r from-[#8E51FF] to-[#D84693] text-white font-medium rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-black/20"
             >
               <span className="text-base font-semibold tracking-wide">Daftar</span>
@@ -71,7 +75,7 @@ export default function Daftar() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                 </svg>
               </div>
-            </Link>
+            </button>
           </div>
         </div>
       </div>

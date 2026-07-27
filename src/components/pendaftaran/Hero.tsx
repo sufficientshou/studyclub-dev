@@ -1,8 +1,11 @@
 'use client';
 
 import Image from 'next/image';
+import { useRegistrationModal } from '@/context/RegistrationContext';
 
 export default function Hero() {
+  const { openClosedModal } = useRegistrationModal();
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020413]">
       <div className="absolute inset-0 z-0">
@@ -33,12 +36,7 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start items-center mb-8 sm:mb-24 lg:mb-0 w-full sm:w-auto px-4 sm:px-0">
             <button
-              onClick={() => {
-                const element = document.getElementById('form-pendaftaran');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+              onClick={openClosedModal}
               className="w-full sm:w-auto flex items-center justify-center gap-3 px-5 py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-[#B05BFF] to-[#EB4688] text-white font-medium text-base md:text-lg rounded-full hover:scale-[1.02] transition-transform shadow-lg shadow-[#A259FF]/25"
             >
               <span>Start Registration</span>
