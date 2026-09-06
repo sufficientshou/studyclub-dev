@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="w-full max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-16 mb-12 lg:mb-16">
           <div className="flex flex-col items-center lg:items-start w-full lg:w-[30%]">
-            <Link href="/" className="mb-4 lg:mb-6 block">
+            <Link href="/" className="mb-4 lg:mb-6 block translate-x-3 sm:translate-x-4 lg:translate-x-6">
               <Image
                 src="/studyclub/images/logo%20studyclub.svg"
                 alt="Study Club Logo"
