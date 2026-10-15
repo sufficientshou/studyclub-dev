@@ -108,6 +108,7 @@ body {
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+  transform: translateZ(0);
 }
 
 .animate-float-delayed {
@@ -225,6 +226,7 @@ body {
   opacity: 0.5;
   animation: about-card-floating 3000ms infinite ease-in-out;
   z-index: 0;
+  will-change: transform;
 }
 
 .about-card-circle-purple {

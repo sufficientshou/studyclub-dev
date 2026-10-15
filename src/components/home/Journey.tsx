@@ -114,7 +114,7 @@ export default function Journey() {
       >
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image
-            src="/studyclub/images/bg%20bintang.png"
+            src="/studyclub/images/bg%20bintang.webp"
             alt="Stars Background"
             fill
             sizes="100vw"
@@ -123,7 +123,7 @@ export default function Journey() {
         </div>
         <div className="absolute left-[-20px] lg:left-10 top-[30%] lg:top-[35%] z-0 pointer-events-none animate-float-delayed">
           <Image 
-            src="/studyclub/images/planet%20merah.png" 
+            src="/studyclub/images/planet%20merah.webp" 
             alt="Planet Merah" 
             width={200}
             height={200}
@@ -132,7 +132,7 @@ export default function Journey() {
         </div>
         <div className="absolute right-[-20px] lg:right-10 top-10 lg:top-16 z-0 pointer-events-none animate-float">
           <Image 
-            src="/studyclub/images/planet%20ungu.png" 
+            src="/studyclub/images/planet%20ungu.webp" 
             alt="Planet Ungu" 
             width={180}
             height={180}
@@ -141,7 +141,7 @@ export default function Journey() {
         </div>
         <div className="absolute right-4 lg:right-20 bottom-10 lg:bottom-20 z-0 pointer-events-none animate-float-horizontal">
           <Image 
-            src="/studyclub/images/meteor.png" 
+            src="/studyclub/images/meteor.webp" 
             alt="Meteor" 
             width={250}
             height={250}

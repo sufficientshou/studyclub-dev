@@ -109,7 +109,7 @@ export default function FormPendaftaran() {
       <div className="absolute inset-0 z-0 pointer-events-none flex flex-col">
         <div className="relative w-full h-1/2">
           <Image
-            src="/studyclub/images/bg%20bintang.png"
+            src="/studyclub/images/bg%20bintang.webp"
             alt="Stars Background Top"
             fill
             sizes="100vw"
@@ -119,7 +119,7 @@ export default function FormPendaftaran() {
         
         <div className="relative w-full h-1/2">
           <Image
-            src="/studyclub/images/bg%20bintang.png"
+            src="/studyclub/images/bg%20bintang.webp"
             alt="Stars Background Bottom"
             fill
             sizes="100vw"
@@ -130,7 +130,7 @@ export default function FormPendaftaran() {
 
       <div className="absolute left-8 lg:left-32 top-32 lg:top-40 z-0 pointer-events-none animate-float-horizontal">
         <Image 
-          src="/studyclub/images/asteroid.png" 
+          src="/studyclub/images/asteroid.webp" 
           alt="Asteroid" 
           width={150}
           height={150}
@@ -140,7 +140,7 @@ export default function FormPendaftaran() {
 
       <div className="absolute right-4 lg:right-20 top-16 lg:top-24 z-0 pointer-events-none animate-float-delayed">
         <Image 
-          src="/studyclub/images/ungu merah.png" 
+          src="/studyclub/images/ungu merah.webp" 
           alt="Planet Right" 
           width={120}
           height={120}
@@ -150,7 +150,7 @@ export default function FormPendaftaran() {
 
       <div className="absolute -left-4 lg:left-0 bottom-40 lg:bottom-[25%] z-0 pointer-events-none">
         <Image 
-          src="/studyclub/images/neptun.png" 
+          src="/studyclub/images/neptun.webp" 
           alt="Planet Neptun" 
           width={600}
           height={600}
@@ -200,7 +200,7 @@ export default function FormPendaftaran() {
           <div className="relative w-full">
             <div className="absolute -left-8 md:-left-20 lg:-left-52 top-1/2 -translate-y-1/2 mt-4 lg:mt-6 z-0 pointer-events-none animate-float">
               <Image 
-                src="/studyclub/images/planet merah.png" 
+                src="/studyclub/images/planet merah.webp" 
                 alt="Planet Merah" 
                 width={120}
                 height={120}
@@ -258,7 +258,7 @@ export default function FormPendaftaran() {
           <div className="relative w-full">
             <div className="absolute -right-10 md:-right-24 lg:-right-56 top-1/2 -translate-y-1/2 -mt-24 lg:-mt-60 z-0 pointer-events-none animate-float-reverse">
               <Image 
-                src="/studyclub/images/planet ungu.png" 
+                src="/studyclub/images/planet ungu.webp" 
                 alt="Planet Ungu" 
                 width={160}
                 height={160}
@@ -336,7 +336,7 @@ export default function FormPendaftaran() {
           <div className="relative w-full">
             <div className="absolute -right-8 md:-right-32 lg:-right-72 -bottom-16 lg:-bottom-20 z-0 pointer-events-none animate-float-delayed">
               <Image 
-                src="/studyclub/images/uranus.png" 
+                src="/studyclub/images/uranus.webp" 
                 alt="Planet Uranus" 
                 width={140}
                 height={140}

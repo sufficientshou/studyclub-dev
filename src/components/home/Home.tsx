@@ -10,7 +10,7 @@ export default function Home() {
     <div id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020413]">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/studyclub/images/bg%20hero.png"
+          src="/studyclub/images/bg%20hero.webp"
           alt="Hero Background"
           fill
           sizes="100vw"
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="flex-1 w-full relative flex justify-center lg:justify-end mb-16 lg:mb-0">
           <div className="relative w-[85%] sm:w-full h-auto max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[850px] xl:max-w-[1000px] lg:translate-x-8 xl:translate-x-16 hover:scale-[1.02] transition-transform duration-500">
             <Image
-              src="/studyclub/images/orbit home.png"
+              src="/studyclub/images/orbit home.webp"
               alt="Study Club App Mockup"
               width={1000}
               height={1000}
@@ -81,7 +81,7 @@ export default function Home() {
             <div className="absolute inset-0">
 
               <Image
-                src="/studyclub/images/komp kiri.png"
+                src="/studyclub/images/komp kiri.webp"
                 alt="Komputer Kiri"
                 width={228}
                 height={150}
@@ -92,7 +92,7 @@ export default function Home() {
               
 
               <Image
-                src="/studyclub/images/komp atas.png"
+                src="/studyclub/images/komp atas.webp"
                 alt="Komputer Atas"
                 width={141}
                 height={141}
@@ -103,7 +103,7 @@ export default function Home() {
               
 
               <Image
-                src="/studyclub/images/komp kanan.png"
+                src="/studyclub/images/komp kanan.webp"
                 alt="Komputer Kanan"
                 width={130}
                 height={179}

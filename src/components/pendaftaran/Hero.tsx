@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020413]">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/studyclub/images/bg%20pendaftaran.png"
+          src="/studyclub/images/bg%20pendaftaran.webp"
           alt="Hero Background"
           fill
           sizes="100vw"
@@ -58,7 +58,7 @@ export default function Hero() {
         <div className="flex-1 w-full flex justify-center lg:justify-end mb-16 lg:mb-0">
           <div className="relative flex items-center justify-center w-[85%] sm:w-full aspect-square max-w-[400px] sm:max-w-[500px] md:max-w-[500px] lg:max-w-[550px] xl:max-w-[650px] translate-x-0 md:translate-x-16 lg:translate-x-16 xl:translate-x-20">
             <Image
-              src="/studyclub/images/uranus.png"
+              src="/studyclub/images/uranus.webp"
               alt="Planet Uranus"
               width={800}
               height={800}
@@ -69,7 +69,7 @@ export default function Hero() {
             
             <div className="absolute top-[8%] left-[15%] w-[18%] animate-float-delayed">
               <Image
-                src="/studyclub/images/piton.png"
+                src="/studyclub/images/piton.webp"
                 alt="Python"
                 width={150}
                 height={150}
@@ -80,7 +80,7 @@ export default function Hero() {
             
             <div className="absolute top-[-2%] left-[50%] -translate-x-1/2 w-[16%] animate-float-reverse">
               <Image
-                src="/studyclub/images/code.png"
+                src="/studyclub/images/code.webp"
                 alt="Code"
                 width={150}
                 height={150}
@@ -91,7 +91,7 @@ export default function Hero() {
             
             <div className="absolute top-[10%] right-[15%] w-[18%] animate-float-horizontal">
               <Image
-                src="/studyclub/images/figma.png"
+                src="/studyclub/images/figma.webp"
                 alt="Figma"
                 width={150}
                 height={150}
@@ -102,7 +102,7 @@ export default function Hero() {
             
             <div className="absolute bottom-[10%] -left-[2%] w-[45%] animate-float">
               <Image
-                src="/studyclub/images/roket.png"
+                src="/studyclub/images/roket.webp"
                 alt="Rocket"
                 width={300}
                 height={300}

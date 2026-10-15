@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020413]">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/studyclub/images/bg%20pendaftaran.png"
+          src="/studyclub/images/bg%20pendaftaran.webp"
           alt="Hero Background"
           fill
           sizes="100vw"
@@ -19,7 +19,7 @@ export default function Hero() {
 
       <div className="absolute top-20 sm:top-32 lg:top-48 left-4 sm:left-8 md:left-24 lg:left-32 w-16 sm:w-28 md:w-40 lg:w-48 animate-float-delayed z-0 opacity-50 sm:opacity-90">
         <Image
-          src="/studyclub/images/ungu%20merah.png"
+          src="/studyclub/images/ungu%20merah.webp"
           alt="Planet Ungu Merah"
           width={200}
           height={200}
@@ -30,7 +30,7 @@ export default function Hero() {
 
       <div className="absolute bottom-32 sm:bottom-24 lg:bottom-40 right-4 sm:right-8 md:right-24 lg:right-32 w-16 sm:w-24 md:w-32 lg:w-40 animate-float z-0 opacity-50 sm:opacity-90">
         <Image
-          src="/studyclub/images/planet%20ungu.png"
+          src="/studyclub/images/planet%20ungu.webp"
           alt="Planet Ungu"
           width={180}
           height={180}

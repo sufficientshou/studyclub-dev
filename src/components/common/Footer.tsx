@@ -95,7 +95,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-2">
             <Image
-              src="/studyclub/images/himtika.png"
+              src="/studyclub/images/himtika.webp"
               alt="HIMTIKA Logo"
               width={24}
               height={24}

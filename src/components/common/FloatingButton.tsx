@@ -11,7 +11,7 @@ export default function FloatingButton() {
       title="Ke Homepage HIMTIKA"
     >
       <Image
-        src="/studyclub/images/himtika.png"
+        src="/studyclub/images/himtika.webp"
         alt="HIMTIKA Logo"
         width={28}
         height={28}

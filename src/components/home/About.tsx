@@ -11,25 +11,25 @@ export default function About() {
     {
       title: "UI/UX",
       images: [
-        "/studyclub/images/ui1.jpg",
-        "/studyclub/images/ui2.jpg",
-        "/studyclub/images/ui3.jpg"
+        "/studyclub/images/ui1.webp",
+        "/studyclub/images/ui2.webp",
+        "/studyclub/images/ui3.webp"
       ]
     },
     {
       title: "Web Development",
       images: [
-        "/studyclub/images/web1.jpg",
-        "/studyclub/images/web2.jpg",
-        "/studyclub/images/web3.jpg"
+        "/studyclub/images/web1.webp",
+        "/studyclub/images/web2.webp",
+        "/studyclub/images/web3.webp"
       ]
     },
     {
       title: "Cyber Security",
       images: [
-        "/studyclub/images/cy1.jpg",
-        "/studyclub/images/cy2.jpg",
-        "/studyclub/images/cy3.jpg"
+        "/studyclub/images/cy1.webp",
+        "/studyclub/images/cy2.webp",
+        "/studyclub/images/cy3.webp"
       ]
     }
   ];
@@ -47,7 +47,7 @@ export default function About() {
       
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
-          src="/studyclub/images/bg%20bintang.png"
+          src="/studyclub/images/bg%20bintang.webp"
           alt="Stars Background"
           fill
           className="object-cover object-center opacity-80"
@@ -56,7 +56,7 @@ export default function About() {
 
       <div className="absolute left-8 lg:left-40 top-24 lg:top-28 z-0">
         <Image 
-          src="/studyclub/images/asteroid.png" 
+          src="/studyclub/images/asteroid.webp" 
           alt="Asteroid" 
           width={150}
           height={150}
@@ -66,7 +66,7 @@ export default function About() {
 
       <div className="absolute right-0 lg:right-16 bottom-0 lg:-bottom-4 z-0 pointer-events-none">
         <Image 
-          src="/studyclub/images/galaksi.png" 
+          src="/studyclub/images/galaksi.webp" 
           alt="Galaxy" 
           width={800}
           height={800}

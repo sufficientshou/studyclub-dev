@@ -8,7 +8,7 @@ const tracksData = [
     id: "uiux",
     title: "UI/UX",
     shortDesc: "UI/UX Design berfokus pada pembuatan tampilan...",
-    image: "/studyclub/images/puiux.png",
+    image: "/studyclub/images/puiux.webp",
     paragraphs: [
       <p key="1">
         <span className="text-white font-bold text-xl mr-2">UI/UX</span> 
@@ -36,7 +36,7 @@ const tracksData = [
     id: "webdev",
     title: "Web Development",
     shortDesc: "Web Development adalah bidang yang mempelajari...",
-    image: "/studyclub/images/pweb.png",
+    image: "/studyclub/images/pweb.webp",
     paragraphs: [
       <p key="1">
         <span className="text-white font-bold text-xl mr-2">Web</span> 
@@ -60,7 +60,7 @@ const tracksData = [
     id: "datascience",
     title: "Data Science",
     shortDesc: "Data Science adalah bidang yang mempelajari...",
-    image: "/studyclub/images/pdata.png",
+    image: "/studyclub/images/pdata.webp",
     paragraphs: [
       <p key="1">
         <span className="text-white font-bold text-xl mr-2">Data</span> 
@@ -91,7 +91,7 @@ export default function Learning() {
       <section id="class" className="relative w-full bg-[#01031A] overflow-hidden flex flex-col items-center justify-center min-h-screen py-24">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/studyclub/images/bg%20learning.png"
+            src="/studyclub/images/bg%20learning.webp"
             alt="Learning Background"
             fill
             className="object-cover object-bottom w-full h-full"
@@ -147,7 +147,7 @@ export default function Learning() {
 
             <div className="absolute -bottom-16 -right-16 opacity-40 z-0 pointer-events-none">
               <Image 
-                src="/studyclub/images/planet%20ungu.png" 
+                src="/studyclub/images/planet%20ungu.webp" 
                 alt="Planet Background" 
                 width={250} 
                 height={250} 

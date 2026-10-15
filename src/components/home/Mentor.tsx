@@ -11,10 +11,10 @@ export default function Mentor() {
     {
       name: "Brandon Haniif L.",
       role: "UI/UX Design",
-      image: "/studyclub/images/mentor%20desain.png",
+      image: "/studyclub/images/mentor%20desain.webp",
       decorations: [
-        { src: "/studyclub/images/pigmuy.png", className: "absolute top-[28%] left-[5%] w-[20%] md:w-[16%] aspect-square object-contain transition-transform duration-700 -rotate-12 group-hover:-translate-y-4 group-hover:-translate-x-4 group-hover:-rotate-12 drop-shadow-2xl" },
-        { src: "/studyclub/images/komp%20kanan.png", className: "absolute top-[16%] right-[5%] w-[32%] md:w-[28%] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:translate-x-4 group-hover:rotate-6 drop-shadow-2xl" }
+        { src: "/studyclub/images/pigmuy.webp", className: "absolute top-[28%] left-[5%] w-[20%] md:w-[16%] aspect-square object-contain transition-transform duration-700 -rotate-12 group-hover:-translate-y-4 group-hover:-translate-x-4 group-hover:-rotate-12 drop-shadow-2xl" },
+        { src: "/studyclub/images/komp%20kanan.webp", className: "absolute top-[16%] right-[5%] w-[32%] md:w-[28%] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:translate-x-4 group-hover:rotate-6 drop-shadow-2xl" }
       ],
       socials: {
         linkedin: "https://www.linkedin.com/in/brandonlastomo/",
@@ -27,10 +27,10 @@ export default function Mentor() {
     {
       name: "Aldi Wijaya",
       role: "Web Development",
-      image: "/studyclub/images/mentor%20webdev.png",
+      image: "/studyclub/images/mentor%20webdev.webp",
       decorations: [
-        { src: "/studyclub/images/html.png", className: "absolute top-[28%] left-[5%] w-[24%] md:w-[20%] aspect-square object-contain transition-transform duration-700 -rotate-12 group-hover:-translate-y-4 group-hover:-translate-x-4 group-hover:-rotate-12 drop-shadow-2xl" },
-        { src: "/studyclub/images/komp%20atas.png", className: "absolute top-[16%] right-[5%] w-[32%] md:w-[28%] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:translate-x-4 group-hover:rotate-6 drop-shadow-2xl" }
+        { src: "/studyclub/images/html.webp", className: "absolute top-[28%] left-[5%] w-[24%] md:w-[20%] aspect-square object-contain transition-transform duration-700 -rotate-12 group-hover:-translate-y-4 group-hover:-translate-x-4 group-hover:-rotate-12 drop-shadow-2xl" },
+        { src: "/studyclub/images/komp%20atas.webp", className: "absolute top-[16%] right-[5%] w-[32%] md:w-[28%] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:translate-x-4 group-hover:rotate-6 drop-shadow-2xl" }
       ],
       socials: {
         linkedin: "https://www.linkedin.com/in/aldi-wijaya/",
@@ -42,11 +42,11 @@ export default function Mentor() {
     {
       name: "Kintan Dyah Astuti ",
       role: "Data Science",
-      image: "/studyclub/images/mentor%20data.png",
+      image: "/studyclub/images/mentor%20data.webp",
       wrapperClass: "scale-[1.4] md:scale-[1.55] origin-bottom",
       decorations: [
-        { src: "/studyclub/images/pituy.png", className: "absolute top-[28%] left-[5%] w-[24%] md:w-[20%] scale-[1.7] md:scale-[1.9] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:-translate-x-4 group-hover:-rotate-6 drop-shadow-2xl" },
-        { src: "/studyclub/images/komp%20kiri.png", className: "absolute top-[16%] right-[5%] w-[32%] md:w-[28%] scale-[1.3] md:scale-[1.5] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:translate-x-4 group-hover:rotate-6 drop-shadow-2xl" }
+        { src: "/studyclub/images/pituy.webp", className: "absolute top-[28%] left-[5%] w-[24%] md:w-[20%] scale-[1.7] md:scale-[1.9] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:-translate-x-4 group-hover:-rotate-6 drop-shadow-2xl" },
+        { src: "/studyclub/images/komp%20kiri.webp", className: "absolute top-[16%] right-[5%] w-[32%] md:w-[28%] scale-[1.3] md:scale-[1.5] aspect-square object-contain transition-transform duration-700 group-hover:-translate-y-4 group-hover:translate-x-4 group-hover:rotate-6 drop-shadow-2xl" }
       ],
       socials: {
         linkedin: "https://www.linkedin.com/in/kintandyahastuti/",
@@ -72,7 +72,7 @@ export default function Mentor() {
     <section id="mentor" className="relative w-full bg-[#01031A] py-24 flex flex-col items-center overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
-          src="/studyclub/images/bg%20bintang.png"
+          src="/studyclub/images/bg%20bintang.webp"
           alt="Stars Background"
           fill
           className="object-cover object-center opacity-80"
@@ -99,7 +99,7 @@ export default function Mentor() {
             >
               <div className="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none">
                 <Image 
-                  src="/studyclub/images/bg%20mentor.png"
+                  src="/studyclub/images/bg%20mentor.webp"
                   alt={mentor.name}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

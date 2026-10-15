@@ -6,7 +6,7 @@ export default function Grup() {
     <section id="grup" className="relative w-full bg-[#01031A] min-h-screen flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
-          src="/studyclub/images/bg%20bintang.png"
+          src="/studyclub/images/bg%20bintang.webp"
           alt="Stars Background"
           fill
           className="object-cover object-center opacity-80"
@@ -16,7 +16,7 @@ export default function Grup() {
         <div className="relative w-full max-w-5xl mx-auto rounded-[24px] md:rounded-[32px] overflow-hidden bg-[#644BE8]/55 p-6 sm:p-8 md:py-12 md:px-12 lg:py-14 lg:px-16 flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16 shadow-2xl border border-white/10">
           <div className="absolute top-[-50px] right-[-50px] md:top-[-80px] md:right-[-80px] z-0 pointer-events-none opacity-80 animate-float-delayed">
             <Image
-              src="/studyclub/images/neptunus.png"
+              src="/studyclub/images/neptunus.webp"
               alt="Neptune Planet"
               width={350}
               height={350}
@@ -25,7 +25,7 @@ export default function Grup() {
           </div>
           <div className="absolute bottom-[-30px] left-[-30px] md:bottom-[-50px] md:left-[-50px] z-0 pointer-events-none opacity-80 animate-float">
             <Image
-              src="/studyclub/images/si%20gelap.png"
+              src="/studyclub/images/si%20gelap.webp"
               alt="Dark Planet"
               width={250}
               height={250}
@@ -36,7 +36,7 @@ export default function Grup() {
           <div className="relative z-10 w-full md:w-[40%] flex justify-center shrink-0">
             <div className="relative w-[120px] h-[120px] sm:w-[180px] sm:h-[180px] md:w-[320px] md:h-[320px] lg:w-[350px] lg:h-[350px] transition-transform duration-500 hover:scale-105 animate-float-reverse">
               <Image
-                src="/studyclub/images/wa.png"
+                src="/studyclub/images/wa.webp"
                 alt="WhatsApp"
                 fill
                 className="object-contain"

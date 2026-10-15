@@ -41,7 +41,7 @@ export default function Faq() {
     <section id="faq" className="relative w-full bg-[#01031A] py-20 lg:py-28 flex flex-col items-center overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
-          src="/studyclub/images/bg%20bintang.png"
+          src="/studyclub/images/bg%20bintang.webp"
           alt="Stars Background"
           fill
           className="object-cover object-center opacity-80"
@@ -50,7 +50,7 @@ export default function Faq() {
 
       <div className="absolute left-[-50px] lg:left-0 top-1/3 z-0 pointer-events-none opacity-90 animate-float">
         <Image 
-          src="/studyclub/images/neptun.png" 
+          src="/studyclub/images/neptun.webp" 
           alt="Planet Kiri" 
           width={300}
           height={300}
@@ -59,7 +59,7 @@ export default function Faq() {
       </div>
       <div className="absolute right-4 lg:right-20 top-20 z-0 pointer-events-none opacity-90 animate-float-delayed">
         <Image 
-          src="/studyclub/images/uranus.png" 
+          src="/studyclub/images/uranus.webp" 
           alt="Planet Kanan" 
           width={100}
           height={100}
