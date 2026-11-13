@@ -9,27 +9,27 @@ export default function About() {
 
   const categories = [
     {
-      title: "UI/UX",
+      title: "UI UX",
       images: [
-        "/studyclub/images/ui1.webp",
-        "/studyclub/images/ui2.webp",
-        "/studyclub/images/ui3.webp"
+        "/studyclub/images/u.webp",
+        "/studyclub/images/u1.webp",
+        "/studyclub/images/u2.webp"
       ]
     },
     {
       title: "Web Development",
       images: [
-        "/studyclub/images/web1.webp",
-        "/studyclub/images/web2.webp",
-        "/studyclub/images/web3.webp"
+        "/studyclub/images/wd.webp",
+        "/studyclub/images/wd1.webp",
+        "/studyclub/images/wd2.webp"
       ]
     },
     {
-      title: "Cyber Security",
+      title: "Data Science",
       images: [
-        "/studyclub/images/cy1.webp",
-        "/studyclub/images/cy2.webp",
-        "/studyclub/images/cy3.webp"
+        "/studyclub/images/ds.webp",
+        "/studyclub/images/ds1.webp",
+        "/studyclub/images/ds2.webp"
       ]
     }
   ];
@@ -149,7 +149,7 @@ export default function About() {
                     <div className="about-card-circle about-card-circle-cyan"></div>
                     <div className="about-card-back-content flex flex-col items-center justify-center">
                       <div className="text-center">
-                        <p className="text-[10px] uppercase tracking-widest text-[#A259FF] font-semibold mb-1">Study Club 2025</p>
+                        <p className="text-[10px] uppercase tracking-widest text-[#A259FF] font-semibold mb-1">Study Club 2026</p>
                         <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">{categories[activeIndex].title}</h3>
                       </div>
                     </div>
@@ -183,7 +183,7 @@ export default function About() {
                     <div className="about-card-circle about-card-circle-cyan"></div>
                     <div className="about-card-back-content flex flex-col items-center justify-center">
                       <div className="text-center">
-                        <p className="text-[10px] uppercase tracking-widest text-[#EB4688] font-semibold mb-1">Study Club 2025</p>
+                        <p className="text-[10px] uppercase tracking-widest text-[#EB4688] font-semibold mb-1">Study Club 2026</p>
                         <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">{categories[activeIndex].title}</h3>
                       </div>
                     </div>
@@ -217,7 +217,7 @@ export default function About() {
                     <div className="about-card-circle about-card-circle-cyan"></div>
                     <div className="about-card-back-content flex flex-col items-center justify-center">
                       <div className="text-center">
-                        <p className="text-[10px] uppercase tracking-widest text-[#00D2FF] font-semibold mb-1">Study Club 2025</p>
+                        <p className="text-[10px] uppercase tracking-widest text-[#00D2FF] font-semibold mb-1">Study Club 2026</p>
                         <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">{categories[activeIndex].title}</h3>
                       </div>
                     </div>
